@@ -23,10 +23,12 @@ font-size: 150%;
 background-color: #ffffff;
 color: #021d3a;
 }
+span {
+font-weight: bold;
+}
 .a {
 grid-column: col 1 /span 2;
 grid-row: row;
-font-weight: bold;
 }
 .b {
 grid-column: col 1 / span 2;
@@ -36,38 +38,22 @@ grid-gap: 10px;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .c {
-grid-column: 1  ;
+grid-column: 2 / span 3 ;
 grid-row: 1;
 font-size: large;
 background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
-font-weight: bold;
 }
-
 .d {
-grid-column: 1 / span 4;
-grid-row: 2;
-font-size: medium;
+grid-column: 1;
+grid-row: 1 / span 2;
 background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
 }
-img {
-max-width: 300px;
-float: left;
-padding-right: 10px;
+.e {
+grid-column: 2 / span 3;
+grid-row: 2;
+font-size: small;
+background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
 }
-/* button below */
-input{ 
-background-color: #021d3a;
-color: white;
-border: none;
-padding: 10px;
-text-align: center;
-text-decoration: none;
-font-size: 16px;
-margin: auto;
-cursor: pointer;
+.profile {
+width: 200px;
 }
-/* original link for source below */
-a  {
-text-decoration: none;
-color: #021d3a;
-}    
