@@ -1,4 +1,3 @@
-
 table {
 width:100%;
 }
@@ -35,8 +34,8 @@ background-color:lightblue;
 #t2 th {
 background-color:  #021d3a;
 color: white;
-}    
-/* below is for mobile - still have to link properly*/
+}
+/* below is for mobile */
 @media only screen and (min-width: 400px) and (max-width: 1126px) {
 html {
 background-image: none;
@@ -55,7 +54,7 @@ display: block;
 thead tr {
 position: absolute;
 }
-#t1 th {
+#t2 th {
 background-color:lightblue;
 border: none;
 color: lightblue;
@@ -79,18 +78,16 @@ white-space: nowrap;
 }
 td:nth-of-type(1):before {font-weight: bold; content: "Player";}
 td:nth-of-type(2):before {font-weight: bold; content: "GP";}
-td:nth-of-type(3):before {font-weight: bold; content: "G";}
-td:nth-of-type(4):before {font-weight: bold; content: "A";}
-td:nth-of-type(5):before {font-weight: bold; content: "P";}
-td:nth-of-type(6):before {font-weight: bold; content: "+/-";}
-td:nth-of-type(7):before {font-weight: bold; content: "PIM";}
-td:nth-of-type(8):before {font-weight: bold; content: "PPG";}
-td:nth-of-type(9):before {font-weight: bold; content: "PPP";}
-td:nth-of-type(10):before {font-weight: bold; content: "SHG";}
-td:nth-of-type(11):before {font-weight: bold; content: "SHP";}
-td:nth-of-type(12):before {font-weight: bold; content: "GWG";}
-td:nth-of-type(13):before {font-weight: bold; content: "OTG";}
-td:nth-of-type(14):before {font-weight: bold; content: "S";}
-td:nth-of-type(15):before {font-weight: bold; content: "S%";}
-td:nth-of-type(16):before {font-weight: bold; content: "FO%";}
+td:nth-of-type(3):before {font-weight: bold; content: "GS";}
+td:nth-of-type(4):before {font-weight: bold; content: "W";}
+td:nth-of-type(5):before {font-weight: bold; content: "L";}
+td:nth-of-type(6):before {font-weight: bold; content: "T";}
+td:nth-of-type(7):before {font-weight: bold; content: "OT";}
+td:nth-of-type(8):before {font-weight: bold; content: "SA";}
+td:nth-of-type(9):before {font-weight: bold; content: "GA";}
+td:nth-of-type(10):before {font-weight: bold; content: "GAA";}
+td:nth-of-type(11):before {font-weight: bold; content: "S";}
+td:nth-of-type(12):before {font-weight: bold; content: "SV%";}
+td:nth-of-type(13):before {font-weight: bold; content: "SO";}
+td:nth-of-type(14):before {font-weight: bold; content: "MIN";}
 }
