@@ -70,4 +70,91 @@ cursor: pointer;
 a  {
 text-decoration: none;
 color: #021d3a;
-}    
+} 
+
+@media only screen and (min-width: 300px) and (max-width: 600px) {
+    h2 {
+    text-align: center;
+    color: #021d3a;
+    font-size: xx-large;
+    }
+    .wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, [col] 150px ) ;
+    grid-template-rows: repeat(2, [row] auto  );
+    background-color: #fff;
+    color:  #021d3a;
+    }
+    .box {
+    background-color:  #021d3a;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+
+    }
+    .box .box {
+    background-color: #ffffff;
+    color: #021d3a;
+    }
+    .a {
+    grid-column: col 1 /span 2;
+    grid-row: row;
+    font-weight: bold;
+    font-size: medium;
+    }
+    .b {
+    grid-column: col 1 / span 2;
+    grid-row: row 2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .c {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    font-size: large;
+    background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
+    font-weight: bold;
+    }        
+    .d {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    font-size: medium;
+    background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
+    }
+    #text {
+        margin: 30px;
+        padding-top: 300px;
+    }
+    img {
+    max-width: 200px;
+    padding-bottom: px; 
+    margin: 0% 35% 0% 20%;
+    /*
+    margin-left: 20%;  
+    margin-right: 20%;
+    */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    }        
+    /* button below */
+    input{ 
+    background-color: #021d3a;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: auto;
+    cursor: pointer;
+    }
+    /* original link for source below */
+    a  {
+    text-decoration: none;
+    color: #021d3a;
+    } 
+    }
