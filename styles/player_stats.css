@@ -1,0 +1,95 @@
+table {
+width:100%;
+}
+table, th, td {
+border: 1px solid blue;
+border-collapse: collapse;
+}
+th, td {
+padding: 15px;
+text-align: left;
+}
+#t1 tr:nth-child(even) {
+background-color:white;
+}
+#t1 tr:nth-child(odd) {
+background-color:lightblue;
+}
+#t1 th {
+background-color:  #021d3a;
+color: white;
+}
+h2 {
+font-size: 200%;
+color: #021d3a;
+text-align: center;
+padding: 10px;
+}
+#t2 tr:nth-child(even) {
+background-color:white;
+}
+#t2 tr:nth-child(odd) {
+background-color:lightblue;
+}
+#t2 th {
+background-color:  #021d3a;
+color: white;
+}
+/* below is for mobile*/
+@media only screen and (min-width: 400px) and (max-width: 1126px) {
+html {
+background-image: none;
+}
+body {
+margin: 0px;
+box-shadow: none;
+}
+nav {
+width: unset;
+padding: 0px;
+}
+table, thead, tbody, tr, td, th {
+display: block;
+}
+thead tr {
+position: absolute;
+}
+#t1 th {
+background-color:lightblue;
+border: none;
+color: lightblue;
+}
+tr {
+margin: 0 0 1rem 0;
+}
+td {
+border: none;
+border-bottom: 1px solid black;
+position: relative;
+padding-left: 50%;
+}
+td:before {
+position: absolute;
+top: 6px;
+left: 6px;
+width: 45%;
+padding-right: 10px;
+white-space: nowrap;
+}
+td:nth-of-type(1):before {font-weight: bold; content: "Player";}
+td:nth-of-type(2):before {font-weight: bold; content: "GP";}
+td:nth-of-type(3):before {font-weight: bold; content: "G";}
+td:nth-of-type(4):before {font-weight: bold; content: "A";}
+td:nth-of-type(5):before {font-weight: bold; content: "P";}
+td:nth-of-type(6):before {font-weight: bold; content: "+/-";}
+td:nth-of-type(7):before {font-weight: bold; content: "PIM";}
+td:nth-of-type(8):before {font-weight: bold; content: "PPG";}
+td:nth-of-type(9):before {font-weight: bold; content: "PPP";}
+td:nth-of-type(10):before {font-weight: bold; content: "SHG";}
+td:nth-of-type(11):before {font-weight: bold; content: "SHP";}
+td:nth-of-type(12):before {font-weight: bold; content: "GWG";}
+td:nth-of-type(13):before {font-weight: bold; content: "OTG";}
+td:nth-of-type(14):before {font-weight: bold; content: "S";}
+td:nth-of-type(15):before {font-weight: bold; content: "S%";}
+td:nth-of-type(16):before {font-weight: bold; content: "FO%";}
+}
