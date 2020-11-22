@@ -47,6 +47,7 @@ background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
 grid-column: 1;
 grid-row: 1 / span 2;
 background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
+margin: auto;
 }
 .e {
 grid-column: 2 / span 3;
