@@ -91,7 +91,7 @@ a  {
         font-size: xx-large;
     }
 
-    .wrapper {
+    .wrappertb {
         display: grid;
         grid-gap: 10px;
         grid-template-columns: repeat(1, [col] 150px ) ;
