@@ -1,124 +1,142 @@
 h2 {
-text-align: center;
-color: #021d3a;
-font-size: xx-large;
+    text-align: center;
+    color: #021d3a;
+    font-size: xx-large;
 }
-.wrapper {
-display: grid;
-grid-gap: 10px;
-grid-template-columns: repeat(1, [col] 150px ) ;
-grid-template-rows: repeat(2, [row] auto  );
-background-color: #fff;
-color:  #021d3a;
-}
-.box {
-background-color:  #021d3a;
-color: #ffffff;
-border-radius: 5px;
-padding: 20px;
-font-size: 150%;
 
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, [col] 150px ) ;
+    grid-template-rows: repeat(2, [row] auto  );
+    background-color: #fff;
+    color:  #021d3a;
 }
+
+.box {
+    background-color:  #021d3a;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
 .box .box {
-background-color: #ffffff;
-color: #021d3a;
+    background-color: #ffffff;
+    color: #021d3a;
 }
+/* Bold words for player info */
 span {
-font-weight: bold;
+    font-weight: bold;
 }
+
 .a {
-grid-column: col 1 /span 2;
-grid-row: row;
+    grid-column: col 1 /span 2;
+    grid-row: row;
 }
+
 .b {
-grid-column: col 1 / span 2;
-grid-row: row 2;
-display: grid;
-grid-gap: 10px;
-grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column: col 1 / span 2;
+    grid-row: row 2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
 .c {
-grid-column: 2 / span 3 ;
-grid-row: 1;
-font-size: large;
-background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
+    grid-column: 2 / span 3 ;
+    grid-row: 1;
+    font-size: large;
+    background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
 }
+
 .d {
-grid-column: 1;
-grid-row: 1 / span 2;
-background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
-margin: auto;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
+    margin: auto;
 }
+
 .e {
-grid-column: 2 / span 3;
-grid-row: 2;
-font-size: small;
-background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
+    grid-column: 2 / span 3;
+    grid-row: 2;
+    font-size: small;
+    background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
 }
+/* Image sizing  */
+
 .profile {
-width: 200px;
+    width: 200px;
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
     h2 {
         text-align: center;
         color: #021d3a;
         font-size: xx-large;
-        }
-        .wrapper {
+    }
+
+    .wrapper {
         display: grid;
         grid-gap: 10px;
         grid-template-columns: repeat(1, [col] 150px ) ;
         grid-template-rows: repeat(3, [row] auto  );
         background-color: #fff;
         color:  #021d3a;
-        }
-        .box {
+    }
+
+    .box {
         background-color:  #021d3a;
         color: #ffffff;
         border-radius: 5px;
         padding: 20px;
         font-size: 150%;
-        
-        }
-        .box .box {
+    }
+
+    .box .box {
         background-color: #ffffff;
         color: #021d3a;
-        }
-        span {
+    }
+        
+    span {
         font-weight: bold;
-        }
-        .a {
+    }
+
+    .a {
         grid-column: col 1 /span 2;
         grid-row: row;
-        }
-        .b {
+    }
+
+    .b {
         grid-column: col 1 / span 2;
         grid-row: row 2;
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-        .c {
+    }
+
+    .c {
         grid-column: 1 / span 4 ;
         grid-row: 2;
         font-size: large;
         background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
-        }
-        .d {
+    }
+
+    .d {
         grid-column: 1/ span 4;
         grid-row: 1;
         background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
         margin: auto;
         padding-left: 18%;
         padding-right: 18%;
-        }
-        .e {
+    }
+
+    .e {
         grid-column: 1 / span 4;
         grid-row: 3;
         font-size: small;
         background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
-        }
-        .profile {
+    }
+    .profile {
         width: 150px;
-        }
+    }
 }
