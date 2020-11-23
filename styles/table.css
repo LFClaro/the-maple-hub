@@ -1,0 +1,62 @@
+  /* Settings for the tables */
+
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: inherit;
+}
+
+tr:nth-child(even) {
+  background-color: #e2eefa;
+}
+
+th{
+  padding-top: 5px;
+  font: bold bolder 120% Arial, sans-serif;
+  padding-right: 15px;
+  background-color:#021d3a;
+  height: 40px;
+  text-align:center;
+  color: #F7F9FB;
+}
+
+td {
+  width: 15em;
+  height: 2.5em;
+  text-align: center;
+  border: none;
+}
+
+  /* below is for mobile - still have to link properly*/
+  @media only screen and (max-width: 480px) {
+    table {
+      margin-top: 40px;
+      border-collapse: collapse;
+      width: 100%;
+      font: normal normal .8em Arial,Sans-serif;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #e2eefa;
+    }
+    
+    th{
+      position: sticky;
+      z-index: 1;
+      padding-top: 5px;
+      font: normal bold 100% Arial, sans-serif;
+      padding-right: 5px;
+      background-color:#021d3a;
+      height: 25px;
+      text-align:center;
+      color: #F7F9FB;
+    }
+    
+    td {
+      width: 1em;
+      height: 2em;
+      text-align: center;
+      border: none;
+    }
+
+  }
