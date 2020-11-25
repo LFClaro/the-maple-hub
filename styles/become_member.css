@@ -1,0 +1,119 @@
+form {
+  margin: auto;
+}
+
+fieldset {
+  margin: 0.5em 0;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input {
+  margin-left: 1em;
+  margin-bottom: 0.2em;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+  width: 91%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.container {
+  margin: auto;
+  display: flex;
+  flex-flow: row;
+  background-color: #021d3a;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 120%;
+  opacity: 0.7;
+}
+
+#settings1,
+#settings2,
+#radio1,
+#radio2,
+#radio3,
+#checkbox {
+  padding: 0;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.validity {
+  clear: both;
+  margin-top: 6px;
+}
+
+.form_row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#button,
+#reset {
+  width: 15em;
+  box-shadow: 2px 2px 0 #646465;
+  background-color: #ffffff;
+}
+
+#button {
+  float: right;
+  font-size: large;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input:invalid + span::after {
+  position: relative;
+  content: " ✖";
+}
+
+input:valid + span::after {
+  content: " ✓";
+}
+
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 515px) {
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 89%;
+  }
+}

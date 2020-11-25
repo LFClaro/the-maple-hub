@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Become a member of The Maple Hub Fan Zone!" />
+    <meta name="keywords"
+        content="Fan Zone, Toronto Maple Leafs, Leafs, Maple Leafs, hockey, hockey team, Toronto sports, Toronto, member" />
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/become_member.css">
+    <link rel="shortcut icon" href="../images/faviconLEAFS.ico">
+    <title>The Maple Hub - Become a Member</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>The Maple Hub</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="../lucas_code/schedule.html">Schedule</a>
+                <a href="../tim_code/roster.html">Roster</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Stats
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../tim_code/player_stats.html">Skater Stats</a>
+                        <a href="../tim_code/goalie_stats.html">Goalie Stats</a>
+                        <a href="../luiz_code/league_stats.html">League Stats</a>
+                        <a href="../cezmi_code/game_stats.html">Game Stats</a>
+                        <a href="#">Season Stats</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Media
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../luiz_code/social_media.html">Social Media</a>
+                        <a href="#">Video Highlights</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">News
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../cezmi_code/covid19.html">COVID-19 Updates</a>
+                        <a href="../tim_code/new.html">General News</a>
+                        <a href="../cezmi_code/injuries.html">Injuries</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Fan Zone
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../lucas_code/login.html">Log in</a>
+                        <a href="../cezmi_code/discuss_board.html">Discussion Board</a>
+                        <a href="../tim_code/trades.html">Fantasy Hockey</a>
+                        <a href="../luiz_code/become_member.html">Become a Member</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <h2>Become a Member</h2>
+            <p style="text-align: center;">Get instant access to <span style="font-variant:small-caps;">The Maple Hub's
+                    Fan Zone</span>, a platform to unite all Leafs
+                Fans!</p>
+            <div class="container">
+                <form id="signup" method="get" action="register_thankyou.html">
+                    <fieldset>
+                        <legend>Account Information</legend>
+                        <div class="form_row">
+                            <div class="col-25">
+                                <label for="user_name">Username:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="text" id="user_name" name="username" required autofocus><span
+                                    class="validity"></span><br />
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <div class="col-25">
+                                <label for="email">E-Mail:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="email" id="email" name="email" required /><span
+                                    class="validity"></span><br />
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <div class="col-25">
+                                <label for="password">Password:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="password" placeholder="Minimum of 6 characters" id="password"
+                                    name="password" minlength="6" required /><span class="validity"></span><br />
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <div class="col-25">
+                                <label for="password">Confirm Password:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="password" id="confirm_password" name="confirm_password" minlength="6"
+                                    required oninput="check(this)" /><span class="validity"></span>
+                                <script>
+                                    function check(input) {
+                                        if (input.value != document.getElementById('password').value) {
+                                            input.setCustomValidity('Passwords Must Match.');
+                                        } else {
+                                            // input is valid -- reset the error message
+                                            input.setCustomValidity('');
+                                        }
+                                    }
+                                </script><br />
+                            </div>
+                        </div>
+                        <div class="form_row">
+                            <div class="col-25">
+                                <label for="dob">Birthday:</label>
+                            </div>
+                            <div class="col-75">
+                                <input type="date" id="dob" name="birthday" required><span
+                                    class="validity"></span><br />
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Settings</legend>
+                        <label for="radio1" id="radio">How did you hear about
+                            us?
+                        </label><br />
+                        <input type="radio" id="radio1" name="hear" value="search" required />Search
+                        Engines<br />
+                        <input type="radio" id="radio2" name="hear" value="word" required />Hockey
+                        Magazines<br />
+                        <input type="radio" id="radio3" name="hear" value="other" required />Other<br /><br />
+                        <label for="checkbox" id="checkbox_yes">
+                            <input type="checkbox" id="checkbox" name="yes" value="yes" />Check if you'd like to receive
+                            messages from the Fan Zone about Fantasy Hockey and our Discussion
+                            Boards!
+                        </label><br /><br />
+                    </fieldset>
+                    <input type="submit" name="submit" id="button" value="Register to the Fan Zone!" />
+                </form>
+            </div>
+        </main>
+        <footer>
+            Copyright &copy; 2020 The Maple Hub<br />
+            <a href="mailto:n01459385@humbermail.ca" target="_blank">luiz@claro.com</a>
+        </footer>
+    </div>
+</body>
+
+</html>
