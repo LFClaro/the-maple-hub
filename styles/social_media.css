@@ -14,7 +14,6 @@
   .box {
     display: flex;
     flex-flow: row;
-    margin: auto;
   }
 }
 
