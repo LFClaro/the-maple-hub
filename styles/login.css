@@ -1,0 +1,34 @@
+main input[type=email],
+main input[type=password] {
+	min-width: 350px;
+	height: 30px;
+	margin: 5px;
+}
+
+main input[type=checked] {
+	float: left;
+}
+
+main div form fieldset a {
+	float: right;
+	margin-bottom: 17px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 592px) {
+	main input[type=email],
+	main input[type=password] {
+		margin: 5px;
+		min-width: 50px;
+	}
+
+	main input[type=checked] {
+		float: none;
+	}
+
+	main div form fieldset a {
+		margin-top: 10px;
+		margin-bottom: 0;
+		display: block;
+		float: none;
+	}
+}
