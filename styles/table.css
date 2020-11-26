@@ -1,10 +1,10 @@
 /* Settings for the tables */
 
 table {
+  position: relative;
   margin-top: 20px;
   border-collapse: collapse;
   width: inherit;
-  position: relative;
 }
 
 th, td {
@@ -16,8 +16,6 @@ tr:nth-child(even) {
 }
 
 th {
-  position: sticky;
-  top: 0; /*required for the stickiness */
   font: bold 120% Arial, sans-serif;
   background-color: #021d3a;
   height: 40px;
@@ -32,8 +30,8 @@ td {
   border: none;
 }
 
-/* below is for mobile - still have to link properly*/
-@media only screen and (min-width: 480px) and (max-width: 592px) {
+/* RESPONSIVENESS */
+@media only screen and (min-width: 0px) and (max-width: 592px) {
   table {
     border-collapse: collapse;
     width: 100%;
