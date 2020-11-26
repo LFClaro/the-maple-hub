@@ -1,0 +1,87 @@
+/* Calendar header */
+main table {
+	font-size: 0.875em;
+	text-align: left;
+	border-spacing: 0px;
+	white-space: normal;
+	width: 95%;
+	margin: auto;
+}
+
+.calendar-header {
+	margin: auto;
+	border-top: 3px solid;
+	border-right: 3px solid;
+	border-left: 3px solid;
+}
+
+.calendar-header h3 {
+	display: inline;
+}
+
+.calendar-header a {
+	color:white;
+	text-decoration: none;
+}
+
+.calendar-header td {
+	color: white;
+	width: 12%;
+	background-color: #012E67;
+	font-weight: bold;
+}
+
+/* Calendar body */
+#grid-calendar-background {
+	width: 95%;
+	margin: auto; 
+	background-image: linear-gradient(#012E67, #519FFD);
+	border: 1px solid;
+}
+
+.grid-calendar-body {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	font-size: 0.875em;
+	text-align: left;
+	width: 100%;
+	height: 900px;
+}
+
+.grid-calendar-item {
+	border: 1px solid black;
+	color: white;
+}
+
+.grid-calendar-item-event {
+	color: white;
+	border: 1px solid black;
+	background-color: rgba(0, 0, 255, 0.575);
+	cursor: pointer;
+}
+
+.grid-calendar-item-event div {
+	text-align: center;
+}
+
+.grid-calendar-item-event div img {
+	text-align: center;
+	height: 30%;
+	min-height: 30px;
+	width: 30%;
+	min-width: 30px;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 592px) {
+	.grid-calendar-item-event div span {
+		display: none;
+	}
+	.grid-calendar-body {
+		height: 450px;
+		padding-bottom: 235px;
+	}
+	.grid-calendar-item {
+		min-height: 135px;
+	}
+}
