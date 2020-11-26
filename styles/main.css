@@ -7,15 +7,17 @@ html {
   background-attachment: fixed;
 }
 
+body {
+  margin: 0 2%;
+  box-shadow: 2px 3px 8px 0;
+}
+
 .wrapper {
   display: grid;
   grid-template: 135px 1fr 45px / 1fr;
 }
 
-body {
-  margin: 0 2%;
-  box-shadow: 2px 3px 8px 0;
-}
+/* HEADER AND ITS CONTENT */
 
 header {
   font-family: sans-serif;
@@ -98,22 +100,41 @@ nav a:hover,
   display: block;
 }
 
+
+/* MAIN and its content */
 main {
   font-family: sans-serif;
-  text-align: justify;
   background: #ffffff url(../images/mainBG.jpg) repeat fixed 0 0;
   grid-row: 2;
-  padding: 30px 20px 30px 20px;
 }
 
 main h2 {
   text-align: center;
 }
 
+main div h2 {
+  font: normal bold 1.5em Arial, Sans-serif;
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+
+main div p {
+  font: normal normal 1.1em Arial, Sans-serif;
+  text-align: left;
+  line-height: 20px;
+}
+
+main div figure figcaption {
+  font: normal normal .7em Arial, Sans-serif;
+  text-align: left;
+}
+
 .box {
   display: flex;
   flex-flow: row;
 }
+
+/* FOOTER AND ITS CONTENT */
 
 footer {
   font-family: sans-serif;
@@ -132,6 +153,22 @@ footer a {
   color: #ffffff;
   text-decoration: none;
 }
+
+@media only screen and (min-width: 800px) {
+  #wrapper {
+    width: 80%;
+    min-width: 800px;
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  main {
+    padding: 30px 20px 30px 20px;
+  }
+}
+
+
+/* Responsive part for mobilephones */
 
 @media only screen and (min-width: 320px) and (max-width: 1000px) { 
   .box {
