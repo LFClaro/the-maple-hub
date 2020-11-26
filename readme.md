@@ -15,7 +15,7 @@ To create a fan page for the Toronto Maple Leafs where users can view Player Sta
 5. Season Game Schedule (_list of games_)
 6. Video Highlights
 7. Maple Leafs Roster
-8. Trading Options
+8. Trading Options / Fantasy Hockey
 9. Injuries / Team Health
 10. COVID-19 Updates 
 11. Become a Member 
@@ -42,7 +42,7 @@ To create a fan page for the Toronto Maple Leafs where users can view Player Sta
   * This page will display the statistsics for each individual player and allow you to navigate between the players on the maple leafs to see each individuals stats. The statistics will be presented up to date, for example; goals, assists, points, shots, shooting % and more.
 * **_News_**
   * The news page related with team's latest condition and information about players, leage and some valuable infromation for the audience.
-* **_Trade Options_**
+* **_Fantasy Hockey/Trade Options_**
   * This page will be a portal for all Trade-related news and discussions. It will also re-direct to a specific Discussion Board where members can talk about upcoming trades.
 * **_Rosters_**
   * This page will display a list with photos, roles and description of each player on the team in the current season. Will be possible to see information from some past seasons as well.
