@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="The season page for the Maple Leafs fans." />
+        <meta name="keywords" content="season stats, nhl, stanley cup, playoffs, Toronto Maple Leafs, Leafs, Maple Leafs, hockey, hockey team, Toronto sports, Toronto" />
+        <link rel="stylesheet" href="../styles/normalize.css">
+        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="../styles/season_stats.css" >
+        <link rel="shortcut icon" href="../images/faviconLEAFS.ico">
+        <title>The Maple Hub - Season Stats</title>
+    </head>
+
+    <body>
+
+        <header id="top">
+            <h1>The Maple Hub</h1>
+            <nav>
+                <a href="/home.html">Home</a>
+                <a href="../lucas_code/schedule.html">Schedule</a>
+                <a href="../tim_code/roster.html">Roster</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Stats
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../tim_code/player_stats.html">Skater Stats</a>
+                        <a href="../tim_code/goalie_stats.html">Goalie Stats</a>
+                        <a href="../luiz_code/league_stats.html">League Stats</a>
+                        <a href="../Cezmi_Code/game_stats.html">Game Stats</a>
+                        <a href="../lucas_code/season_stats.html">Season Stats</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Media
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../luiz_code/social_media.html">Social Media</a>
+                        <a href="#">Video Highlights</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">News
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../cezmi_code/covid19.html">COVID-19 Updates</a>
+                        <a href="../tim_code/new.html">General News</a>
+                        <a href="../cezmi_code/injuries.html">Injuries</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Fan Zone
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="../lucas_code/login.html">Log in</a>
+                        <a href="../cezmi_code/discuss_board.html">Discussion Board</a>
+                        <a href="../tim_code/trades.html">Fantasy Hockey</a>
+                        <a href="../luiz_code/become_member.html">Become a Member</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Season Stats</h2>  
+
+            <table id="t1" role="table">
+                <caption>&nbsp;Team Statistics</caption>
+
+                <thead role="rowgroup">
+                    <tr role="row">
+                        <th role="columnheader">Team</th>
+                        <th role="columnheader">AvAge</th>
+                        <th role="columnheader">GP</th> 
+                        <th role="columnheader">W</th>
+                        <th role="columnheader">L</th>
+                        <th role="columnheader">OL</th>
+                        <th role="columnheader">PTS</th> 
+                        <th role="columnheader">PTS%</th>
+                        <th role="columnheader">GF</th>
+                        <th role="columnheader">GA</th> 
+                        <th role="columnheader">TG/G</th>
+                        <th role="columnheader">PP</th>
+                        <th role="columnheader">PPO</th> 
+                        <th role="columnheader">PP%</th>
+                        <th role="columnheader">PPA</th>
+                        <th role="columnheader">PPOA</th> 
+                    </tr>
+                </thead>
+
+                <tbody role="rowgroup">
+                    <tr role="row">
+                        <td role="cell">Toronto Maple Leafs</td>
+                        <td role="cell">26.8</td>
+                        <td role="cell">70</td>
+                        <td role="cell">36</td>
+                        <td role="cell">25</td>
+                        <td role="cell">9</td>
+                        <td role="cell">81</td>
+                        <td role="cell">.579</td>
+                        <td role="cell">237</td>
+                        <td role="cell">222</td>
+                        <td role="cell">6.56</td>
+                        <td role="cell">45</td>
+                        <td role="cell">195</td>
+                        <td role="cell">23.08</td>
+                        <td role="cell">43</td>
+                        <td role="cell">193</td>
+                    </tr>
+                    <tr role="row">
+                        <td role="cell">League Average</td>
+                        <td role="cell">27.9</td>
+                        <td role="cell">70</td>
+                        <td role="cell">35</td>
+                        <td role="cell">27</td>
+                        <td role="cell">8</td>
+                        <td role="cell">78</td>
+                        <td role="cell">.558</td>
+                        <td role="cell">208</td>
+                        <td role="cell">208</td>
+                        <td role="cell">5.96</td>
+                        <td role="cell">42</td>
+                        <td role="cell">208</td>
+                        <td role="cell">20.03</td>
+                        <td role="cell">42</td>
+                        <td role="cell">208</td>
+                    </tr>
+                </tbody>
+            </table><br><br>
+
+            <table id="t2" role="table">
+                <caption>&nbsp;Team Analytics</caption>
+
+                <thead role="rowgroup">
+                    <tr role="row">
+                        <th role="columnheader">Team</th>
+                        <th role="columnheader">S%</th>
+                        <th role="columnheader">SV%</th> 
+                        <th role="columnheader">CF</th>
+                        <th role="columnheader">CA</th>
+                        <th role="columnheader">xGF</th> 
+                        <th role="columnheader">xGA</th>
+                        <th role="columnheader">aGF</th>
+                        <th role="columnheader">aGA</th> 
+                        <th role="columnheader">SCF</th>
+                        <th role="columnheader">SCA</th>
+                        <th role="columnheader">HDF</th> 
+                        <th role="columnheader">HDA</th>
+                        <th role="columnheader">HDGF</th>
+                        <th role="columnheader">HDC%</th>
+                        <th role="columnheader">HDGA</th> 
+                    </tr>
+                </thead>
+                    
+                <tbody role="rowgroup">
+                    <tr role="row">
+                        <td role="cell">Toronto Maple Leafs</td>
+                        <td role="cell">8.1</td>
+                        <td role="cell">.917</td>
+                        <td role="cell">3406</td>
+                        <td role="cell">3162</td>
+                        <td role="cell">159.5</td>
+                        <td role="cell">152.7</td>
+                        <td role="cell">159</td>
+                        <td role="cell">158</td>
+                        <td role="cell">1644</td>
+                        <td role="cell">1528</td>
+                        <td role="cell">490</td>
+                        <td role="cell">460</td>
+                        <td role="cell">69</td>
+                        <td role="cell">12.3</td>
+                        <td role="cell">76</td>
+                    </tr>
+                    <tr role="row">
+                        <td role="cell">League Average</td>
+                        <td role="cell">7.6</td>
+                        <td role="cell">.924</td>
+                        <td role="cell">3100</td>
+                        <td role="cell">3100</td>
+                        <td role="cell">143.0</td>
+                        <td role="cell">143.0</td>
+                        <td role="cell">140</td>
+                        <td role="cell">140</td>
+                        <td role="cell">1447</td>
+                        <td role="cell">1447</td>
+                        <td role="cell">443</td>
+                        <td role="cell">443</td>
+                        <td role="cell">61</td>
+                        <td role="cell">12.2</td>
+                        <td role="cell">61</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </main>
+        
+        <footer>
+            Copyright &copy; 2020 The Maple Hub<br />
+            <a href="mailto:n01427050@humbermail.ca" target="_blank">lucas@sousa.com</a>
+        </footer>
+    </body>
+</html>
