@@ -127,10 +127,7 @@ main div figure figcaption {
   text-align: left;
 }
 
-.box {
-  display: flex;
-  flex-flow: row;
-}
+
 
 footer {
   font-family: sans-serif;
