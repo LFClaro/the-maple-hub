@@ -9,6 +9,7 @@
         content="nhl, league stats, standings, Toronto Maple Leafs, Leafs, Maple Leafs, hockey, hockey team, Toronto sports, Toronto, injuries" />
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/table.css">
+    <link rel="stylesheet" href="../styles/subForm.css">
     <link rel="shortcut icon" href="../images/faviconLEAFS.ico">
     <title>The Maple Hub - Injuries</title>
 </head>
@@ -173,7 +174,21 @@
                     </tr>
 
                 </tbody>
-            </table>
+            </table> <br>
+
+            <form action="#">
+                <fieldset>
+                    <legend>Comments : </legend>
+                    <label for="name">Name : &nbsp; </label>
+                    <input type="text" id="name" name="userName" placeholder="John etc."> <br><br>
+                    <label for="email">Email : &nbsp;</label>
+                    <input type="text" id="email" name="userEmail" placeholder="email@email.com"><br><br>
+                    <label for="com">Comment :</label><br><br>
+                    <textarea name="newsCom" id="com" cols="60%" rows="10%" placeholder="Add your comment" ></textarea><br><br>
+                    <input type="submit" value="Submit" id="subBut">
+                    <input type="reset" value="Clear" id="clrBut">  
+                </fieldset>
+            </form>
           
         </main>
         <!-- FOOTER -->
@@ -181,6 +196,7 @@
             Copyright &copy; 2020 The Maple Hub<br />
             <a href="mailto:email@humbermail.ca" target="_blank">email@email.com</a>
         </footer>
+        <script src="../scripts/form.js"></script>
 </body>
 
 </html>
