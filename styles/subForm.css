@@ -6,3 +6,8 @@ form {
 form fieldset{
     background-color: rgb(224, 220, 220);
 }
+
+.nDiv {
+    width: 80%;
+    background-color: rgb(224, 220, 220);
+}
