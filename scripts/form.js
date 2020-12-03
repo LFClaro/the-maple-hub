@@ -17,7 +17,7 @@ const $ = function (id) {
 function selection () {
     let opt;
     for (let index = 1; index < 4; index++) {
-        opt += "<option>" + $(index).textContent + "</option>";      
+        opt += "<option id = \"" + "news" + index + "\">" + $(index).textContent + "</option>";      
     }
     $('select').innerHTML = opt;
 }
@@ -29,8 +29,9 @@ window.onload = function () {
 }
 
 function submitBut () {
-    // if($('select').firstChild)
-    // {
+    
+    // if(new1)
+    //  {
 
         const t1 = document.createElement('h4');
         console.log("element created");
@@ -46,12 +47,12 @@ function submitBut () {
         console.log("Childern appended");
 
 
-    // }
-    // else if ($('select').lastChild) {
+    //  }
+    //  else if ($('select').lastChild) {
 
-    // }
-    // else {
+    //  }
+    //  else {
 
-    // }
+    //  }
 
 }
