@@ -25,27 +25,20 @@ function selection () {
 selection();
 
 window.onload = function () {
-    $('subBut').onclick = submitBut;
+    $('subButton').onclick = submitButton;
 }
 
-function submitBut () {
+function submitButton () {
     
-    // if(new1)
-    //  {
-
+    //if(new1)
+    // {
         const t1 = document.createElement('h4');
-        console.log("element created");
         t1.textContent = $('name').value;
-        console.log("value received");
         const tt1 = document.createElement('p');
-        console.log("p created");
         tt1.textContent = $('com').value;
-        console.log("text area received");
-        const p1 = $('n2');
+        const p1 = document.querySelector('#n1');
         p1.appendChild(t1);
         p1.appendChild(tt1);
-        console.log("Childern appended");
-
 
     //  }
     //  else if ($('select').lastChild) {
