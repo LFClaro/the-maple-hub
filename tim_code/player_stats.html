@@ -89,7 +89,13 @@
         </thead>
         <tbody role="rowgroup">
           <tr role="row">
-            <td role="cell">A.Matthews</td>
+              
+            <td role="cell" id="tdname"
+            onmouseover="document.getElementById('mlph').src='../images/auston-matthews-2020-38.jpg';"
+            onmouseout="document.getElementById('mlph').src='../images/MLPH.png';" >
+                A.Matthews
+            <img id="mlph" src="../images/MLPH.png" alt="Maple leaf place holder" style="max-width: 50px;">
+            </td>
             <td role="cell">70</td>
             <td role="cell">47</td>
             <td role="cell">33</td>
@@ -185,5 +191,6 @@
         Copyright &copy; 2020 The Maple Hub<br />
         <a href="mailto:tim.marshall.burns95@gmail.com" target="_blank">Tim@Burns.com</a>
     </footer>
+    <script src="../scripts/player_stats.js"></script>
 </body>
 </html>

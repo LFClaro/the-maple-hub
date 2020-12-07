@@ -112,3 +112,6 @@ h2 {
     td:nth-of-type(15):before {font-weight: bold; content: "S%";}
     td:nth-of-type(16):before {font-weight: bold; content: "FO%";}
 }
+
+
+/* For JS images */
