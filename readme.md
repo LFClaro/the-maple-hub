@@ -43,9 +43,9 @@ To create a fan page for the Toronto Maple Leafs where users can view Player Sta
 * **_News_**
   * The news page related with team's latest condition and information about players, leage and some valuable infromation for the audience.
 * **_Fantasy Hockey/Trade Options_**
-  * This page will be a portal for all Trade-related news and discussions. It will also re-direct to a specific Discussion Board where members can talk about upcoming trades.
+  * This page will be a portal for all Trade-related news and discussions. It will also re-direct to a specific Discussion Board where members can talk about upcoming trades. - json ???
 * **_Rosters_**
-  * This page will display a list with photos, roles and description of each player on the team in the current season. Will be possible to see information from some past seasons as well.
+  * This page will display a list with photos, roles and description of each player on the team in the current season. Will be possible to see information from some past seasons as well. - json ???
 
 **LUIZ**
 * **_League Stats_**

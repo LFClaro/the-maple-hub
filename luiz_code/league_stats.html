@@ -10,7 +10,42 @@
   <link rel="stylesheet" href="../styles/normalize.css">
   <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" href="../styles/table.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style>
+    th {
+      cursor: pointer;
+      padding: .5rem;
+    }
+
+    tbody tr:hover {
+      color: white;
+      background-color: #021D3A;
+      opacity: 90%;
+    }
+
+    table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
+      white-space: pre;
+      content: "\a \25B3\25BD";
+      font-size: smaller;
+    }
+
+    label {
+      display: inline-block;
+      width: 5em;
+    }
+  </style>
   <link rel="shortcut icon" href="../images/faviconLEAFS.ico">
+  <!-- TABLE SORTING -->
+  <script src="../scripts/sorttable.js"></script>
+  <!-- IMAGE/MESSAGE ON HOVER (in development) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+    $(function () {
+      $(document).tooltip();
+      $("#Team1").tooltip({ content: '<img src="../images/warning.png" />' });
+    });
+  </script>
   <title>The Maple Hub - League Stats</title>
 </head>
 
@@ -70,26 +105,27 @@
   <main>
     <h2>League Standings</h2>
     <div class="box">
-      <table id="t1">
+      <!-- TABLE MUST HAVE class="sortable" FOR SCRIPT TO WORK -->
+      <table class="sortable" id="t1">
         <thead>
           <tr>
-            <th>#</th>
+            <th title="Position Number">#</th>
             <th>Team</th>
             <th>Season</th>
-            <th>GP</th>
-            <th>W</th>
-            <th>L</th>
-            <th>T</th>
-            <th>P</th>
-            <th>P&#37;</th>
-            <th>GF</th>
-            <th>GA</th>
+            <th title="Games Played">GP</th>
+            <th title="Wins">W</th>
+            <th title="Losses">L</th>
+            <th title="Ties">T</th>
+            <th title="Points">P</th>
+            <th title="Points Percentage">P&#37;</th>
+            <th title="Goals For">GF</th>
+            <th title="Goals Against">GA</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>1</td>
-            <td>Tampa Bay Lightning</td>
+            <td><span id="Team1" title="">Tampa Bay Lightning</span></td>
             <td>2019-20</td>
             <td>25</td>
             <td>18</td>
