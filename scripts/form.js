@@ -30,7 +30,7 @@ window.onload = function () {
 
 function submitButton () {
     
-    //if(new1)
+    // if(new1.selection)
     // {
         const t1 = document.createElement('h4');
         t1.textContent = $('name').value;

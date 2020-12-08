@@ -9,6 +9,13 @@ form fieldset{
 }
 
 .nDiv {
-    width: 80%;
+    width: 100%;
     background-color: rgb(224, 220, 220);
+}
+.nDiv h4 {
+    border-bottom: 1px solid black;
+}
+
+.nDiv p {
+    font: normal normal .9em Arial, Sans-serif;
 }
