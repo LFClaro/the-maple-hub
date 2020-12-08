@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Maple Hub - Fantasy Hockey</title>
+    <link rel="stylesheet" href="../styles/discus_board.css">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="shortcut icon" href="../images/faviconLEAFS.ico">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="top">
@@ -58,14 +60,38 @@
             </div>
         </nav>
     </header>
-    <main>
-        <h2>
-           TEMPLATE PAGE PLACE HOLDER 
-        </h2>
+    <main id="disc">
+        <h1 >Discussion Board</h1>
+        <h3><a href="#">What do you think about the last game?</a></h3>
+        <div id="lgame">
+            <p>Hello World</p>
+
+        </div>
+        <h3><a href="#"></a><a href="#">What about the performance of the players at the last game?</a></h3>
+        <div id="pgame">
+            <p>Merhaba Dunya</p>
+
+        </div>
+        <h3><a href="#"></a><a href="#">Rumors</a></h3>
+        <div id="rumor">
+            <p>zdrastvyute mir</p>
+
+        </div> <br> <br>
+
+        <form action="#">
+            <fieldset>
+                <legend>Sign in / Sign up</legend>
+                <p>In order to add comments, select one of the option<p>
+                <input type="button" value="Sign in" id="sin" onclick="signIn()">
+                <input type="button" value="Sign up" id="sup" onclick="members()">
+            </fieldset>
+        </form>
+        
     </main>
     <footer>
         Copyright &copy; 2020 The Maple Hub<br />
         <a href="mailto:tim.marshall.burns95@gmail.com" target="_blank">Tim@Burns.com</a>
     </footer>
+    <script src="../scripts/discussion.js"></script>
 </body>
 </html>

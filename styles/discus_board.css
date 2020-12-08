@@ -1,0 +1,22 @@
+/* from here the discussion board page's settings start */
+h3 {
+    padding-left: 35px;
+    font: normal normal 1.5em Arial, Sans-serif;
+    background: url(../images/rArrow.png) no-repeat left center;
+}
+h3.down {
+    background: url(../images/dArrow.png) no-repeat left center;
+
+}
+
+a {
+    text-decoration: none;
+    text-align: left;
+    color: #021d3a;
+}
+
+input {
+    background-color:  #021d3a;
+    color: white;
+    padding: 5px;
+}
