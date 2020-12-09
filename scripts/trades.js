@@ -1,12 +1,12 @@
 //function to change color and font size of og
 function hover() {
-    var x = document.getElementById("box-a");
+    var x = document.getElementById("box a");
     x.style.color = 'gold'
     x.style.fontSize = 'xx-large'
 }
 //function to change back to og
 function out() {
-    var x = document.getElementById("box-a");
+    var x = document.getElementById("box a");
     x.style.color = 'white';
     x.style.fontSize = 'x-large'
 }
@@ -26,21 +26,3 @@ function reset() {
   img.style.transform = "scale(1)"; 
   img.style.transition = "transform 0.25s ease"; 
 } 
-
-function hover2() {
-  var x = document.getElementsByClassName("box a");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.color = 'gold';
-    x[i].style.fontSize = 'x-large';
-  }
-}
-
-function out2() {
-  var x = document.getElementsByClassName("box a");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.color = "white";
-    x[i].style.fontSize = 'large';
-  }
-}
