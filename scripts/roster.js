@@ -44,3 +44,6 @@ function out2() {
     x[i].style.fontSize = 'large';
   }
 }
+
+// possible case or if else solution for the above issues 
+

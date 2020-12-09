@@ -65,7 +65,7 @@ img {
 }
 
 /* button below */
-input{ 
+#button{ 
     background-color: #021d3a;
     color: white;
     border: none;
@@ -159,7 +159,7 @@ a  {
     }   
 
     /* button below */
-    input{ 
+    #button{ 
         background-color: #021d3a;
         color: white;
         border: none;

@@ -67,13 +67,13 @@
             Trades 
         </h2>    
         <div class="wrappertb">        
-            <div class="box a">Joey Anderson, RW - Contract extended Three-year, two-way contract extension</div>           
+            <div class="box a" id="box-a" onmouseover="hover()" onmouseout="out()">Joey Anderson, RW - Contract extended Three-year, two-way contract extension</div>           
             <div class="box b">
-                <div class="box c">
+                <div class="box c" onmouseover="this.style.color='gold';" onmouseout="this.style.color='#021d3a'">
                     Fri, Oct 30
                 </div>                 
                 <div class="box d">
-                    <img src="../images/joey-anderson-2019-51.jpg" alt="Joey Anderson">
+                    <img src="../images/joey-anderson-2019-51.jpg" alt="Joey Anderson" id="profile" onclick="enlargeImg()" ondblclick="reset()">
                     <div class="text">
                         The Toronto Maple Leafs signed forward Joey Anderson to a three-year contract, 
                         the team announced Friday.
@@ -107,7 +107,10 @@
                         <br>
                     </div>
                 <form>
-                    <input type="button" onclick="window.location.href='../tim_code/new.html';" value="Join the discussion!" />
+                    <input type="text" id="comBox" value="leave your comments here!" style="height:50px;width:300px;font-size:10pt;">
+                    <br>
+                    <input type="button" id="button" onclick="comments()" value="Join the discussion and leave a comment!" />
+                    <p id="comment-here" style="text-align: center;"></p>
                 </form>
                 </div>
             </div>
@@ -116,7 +119,7 @@
         <div class="wrapper">        
             <div class="box a">Michael Hutchinson, G - Signed as Free Agent Two-year, two-way contract</div>          
             <div class="box b">
-                <div class="box c">
+                <div class="box c" onmouseover="this.style.color='gold';" onmouseout="this.style.color='#021d3a'">
                     Fri, Oct 30
                 </div>                 
                 <div class="box d">
@@ -161,7 +164,7 @@
         <div class="wrapper">        
             <div class="box a">Mac Hollowell, D - Assigned to European Team TUTO-Finland</div>            
             <div class="box b">
-                <div class="box c">
+                <div class="box c" onmouseover="this.style.color='gold';" onmouseout="this.style.color='#021d3a'">
                     Wed, Oct 28
                 </div>                 
                 <div class="box d">
@@ -204,5 +207,6 @@
         Copyright &copy; 2020 The Maple Hub<br />
         <a href="mailto:tim.marshall.burns95@gmail.com" target="_blank">Tim@Burns.com</a>
     </footer>
+    <script src="../scripts/trades.js"></script>
 </body>
 </html>

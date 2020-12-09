@@ -1,12 +1,12 @@
 //function to change color and font size of og
 function hover() {
-    var x = document.getElementById("box a");
+    var x = document.getElementById("box-a");
     x.style.color = 'gold'
     x.style.fontSize = 'xx-large'
 }
 //function to change back to og
 function out() {
-    var x = document.getElementById("box a");
+    var x = document.getElementById("box-a");
     x.style.color = 'white';
     x.style.fontSize = 'x-large'
 }
@@ -26,3 +26,10 @@ function reset() {
   img.style.transform = "scale(1)"; 
   img.style.transition = "transform 0.25s ease"; 
 } 
+
+// function to leave comments on trades
+// maybe use an array to display more than one comment?
+function comments() {
+  var x = document.getElementById("comBox").value;
+  document.getElementById("comment-here").innerHTML = x;
+}
