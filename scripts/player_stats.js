@@ -31,4 +31,10 @@ window.onload = highlight_row;
 
 // create a function to display what the abbreviations (GP,G,A, etc) are on click / hover 
 // maybe use an array and alert to display? 
-
+// below is very simple 
+function display(){
+    document.getElementById("abr").innerHTML = "Games Played";
+}
+function reset(){
+    document.getElementById("abr").innerHTML = "GP";
+}
