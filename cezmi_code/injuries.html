@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../styles/table.css">
     <link rel="stylesheet" href="../styles/subForm.css">
     <link rel="shortcut icon" href="../images/faviconLEAFS.ico">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <title>The Maple Hub - Injuries</title>
 </head>
 
@@ -67,6 +68,7 @@
             </nav>
         </header>
         <!-- MAIN PART -->
+        <script src="../scripts/injury.js"></script>
         <main>
             <!-- CREATE A NEW TABLE -->
             <table>
@@ -81,114 +83,12 @@
                     </tr>
                 </thead>
                 <!-- CREATE BODY OF TABLE -->
-                <tbody>
-                    <tr>
-                        <td headers="date">2/25/20</td>
-                        <td headers="ply">Muzzin, J.</td>
-                        <td headers="pos">D</td>
-                        <td headers="inj">Hand</td>
-                    </tr>
-                    <tr>
-                        <td headers="date">2/10/20</td>
-                        <td headers="ply">Tavares, J.</td>
-                        <td headers="pos">C</td>
-                        <td headers="inj">Illness</td>
-                    </tr>
-                    <tr>
-                        <td headers="date">2/7/20</td>
-                        <td headers="ply">Nylander, W.</td>
-                        <td headers="pos">RW</td>
-                        <td headers="inj">Illness</td>
-                    </tr>
-                    <tr>
-                        <td headers="date">2/3/20</td>
-                        <td headers="ply">Andersen, F.</td>
-                        <td headers="pos">G</td>
-                        <td headers="inj">Neck</td>
-                    </tr>
-                    <tr>
-                        <td headers="date">2/1/20</td>
-                        <td headers="ply">Bogosian, Z.</td>
-                        <td headers="pos">D</td>
-                        <td headers="inj">Illness</td>
-                    </tr>
-                    <tr>
-                        <td headers="date">2/1/20</td>
-                        <td headers="ply">Dermott, T.</td>
-                        <td headers="pos">D</td>
-                        <td headers="inj">Illness</td>
-                    </tr>
-                    <tr>
-                        <td headers="date">1/13/20</td>
-                        <td headers="ply">Rielly, M.</td>
-                        <td headers="pos">D</td>
-                        <td headers="inj">Foot</td>
-                    </tr>
-                    <tr>
-                        <td headers="date">1/12/20</td>
-                        <td headers="ply">Muzzin, J.</td>
-                        <td headers="pos">D</td>
-                        <td headers="inj">Lower Body</td>
-                    </tr>
-                    <tr>
-                        <td headers="date">12/31/19</td>
-                        <td headers="ply">Brodie, T.</td>
-                        <td headers="pos">D</td>
-                        <td headers="inj">Illness</td>
-                    </tr>
-                    <tr>
-                        <td headers="date">12/27/19</td>
-                        <td headers="ply">Mikheyev, I.</td>
-                        <td headers="pos">RW</td>
-                        <td headers="inj">Hand</td>
-                    </tr>
-                    <tr>
-                        <td headers="date">11/15/19</td>
-                        <td headers="ply">Kerfoot, A.</td>
-                        <td headers="pos">C</td>
-                        <td headers="inj">Dental</td>
-                    </tr>
-                    <tr>
-                        <td headers="date">11/14/19</td>
-                        <td headers="ply">Brodie, T.</td>
-                        <td headers="pos">D</td>
-                        <td headers="inj">Undisclosed</td>
-                    </tr>
-                    <tr>
-                        <td headers="date">11/10/19</td>
-                        <td headers="ply">Marner, M.</td>
-                        <td headers="pos">RW</td>
-                        <td headers="inj">Lower Body</td>
-                    </tr>
-                    <tr>
-                        <td headers="date">10/29/19</td>
-                        <td headers="ply">Muzzin, J.</td>
-                        <td headers="pos">D</td>
-                        <td headers="inj">Personal</td>
-                    </tr>
-                    <tr>
-                        <td headers="date">10/17/19</td>
-                        <td headers="ply">Tavares, J.</td>
-                        <td headers="pos">C</td>
-                        <td headers="inj">Upper Body</td>
-                    </tr>
+                <tbody id="tbody">
+                    
+                <!-- Data of this part will be pupulated by injury.js by using injury.json -->
 
                 </tbody>
             </table> <br>
-
-            <form action="#">
-                <fieldset>
-                    <legend>Comments : </legend>
-                    <label for="name">Name : &nbsp; </label>
-                    <input type="text" id="name" name="userName" placeholder="John etc."> <br><br>
-                    <label for="email">Email : &nbsp;</label>
-                    <input type="text" id="email" name="userEmail" placeholder="email@email.com"><br><br>
-                    <label for="com">Comment :</label><br><br>
-                    <textarea name="newsCom" id="com" cols="60%" rows="10%" placeholder="Add your comment" ></textarea><br><br>
-                    <input type="submit" value="Submit" id="subBut">
-                    <input type="reset" value="Clear" id="clrBut">  
-                </fieldset>
-            </form>
           
         </main>
         <!-- FOOTER -->
@@ -196,7 +96,7 @@
             Copyright &copy; 2020 The Maple Hub<br />
             <a href="mailto:email@humbermail.ca" target="_blank">email@email.com</a>
         </footer>
-        <script src="../scripts/form.js"></script>
+        
 </body>
 
 </html>

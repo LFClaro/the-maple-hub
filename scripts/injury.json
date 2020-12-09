@@ -1,0 +1,93 @@
+{"injuries":[
+    {
+        "date": "2/25/20",
+        "ply": "Muzin, J.",
+        "pos": "D",
+        "inj":"Hand"
+    },
+    {
+        "date":"2/10/20",
+        "ply":"Tavares, J.",
+        "pos":"C",
+        "inj":"Illness"
+    },
+    {
+        "date":"2/7/20",
+        "ply":"Nylander, W.",
+        "pos":"RW",
+        "inj":"Illness"
+    },
+    {
+        "date":"2/3/20",
+        "ply":"Andersen, F.",
+        "pos":"G",
+        "inj":"Neck"
+    },
+    {
+        "date":"2/1/20",
+        "ply":"Bogosian, Z.",
+        "pos":"D",
+        "inj":"Illness"
+    },
+    {
+        "date":"2/1/20",
+        "ply":"Dermott, T.",
+        "pos":"D",
+        "inj":"Illness"
+    },
+    {
+        "date":"1/13/20",
+        "ply":"Rielly, M.",
+        "pos":"D",
+        "inj":"Foot"
+    },
+    {
+        "date":"1/12/20",
+        "ply":"Muzzin, J.",
+        "pos":"D",
+        "inj":"Lower Body"
+    },
+    {
+        "date":"12/31/19",
+        "ply":"Brodie, T.",
+        "pos":"D",
+        "inj":"Illness"
+    },
+    {
+        "date":"12/27/19",
+        "ply":"Mikheyev, I.",
+        "pos":"RW",
+        "inj":"Hand"
+    },
+    {
+        "date":"11/15/19",
+        "ply":"Kerfoot, A.",
+        "pos":"C",
+        "inj":"Dental"
+    },
+    {
+        "date":"11/14/19",
+        "ply":"Brodie, T.",
+        "pos":"D",
+        "inj":"Undisclosed"
+    },
+    {
+        "date":"11/10/19",
+        "ply":"Marner, M.",
+        "pos":"RW",
+        "inj":"Lower Body"
+    },
+    {
+        "date":"10/29/19",
+        "ply":"Muzzin, J.",
+        "pos":"D",
+        "inj":"Personal"
+    },
+    {
+        "date":"10/17/19",
+        "ply":"Tavares, J.",
+        "pos":"C",
+        "inj":"Upper Body"
+    }
+
+]}
