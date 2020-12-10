@@ -12,17 +12,17 @@ function out(id) {
 // Get the img object using its Id 
 img = document.getElementById("profile"); 
 // Function to increase image size 
-function enlargeImg() { 
+function enlargeImg(id) { 
   // Set image size to 1.5 times original 
-  profile.style.transform = "scale(1.5)"; 
+  id.style.transform = "scale(1.2)"; 
   // Animation effect  
-  profile.style.transition = "transform 0.25s ease"; 
+  id.style.transition = "transform 0.25s ease"; 
 } 
 // Function to reset image size 
-function reset() { 
+function reset(id) { 
   // Set image size to original 
-  img.style.transform = "scale(1)"; 
-  img.style.transition = "transform 0.25s ease"; 
+  id.style.transform = "scale(1)"; 
+  id.style.transition = "transform 0.25s ease"; 
 } 
 
 // function to leave comments on trades
