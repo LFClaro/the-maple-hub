@@ -1,0 +1,30 @@
+{
+  "teams": [
+    {
+      "pos": "1",
+      "logo": "BOB",
+      "name": "Boston Bruins",
+      "gp": "70",
+      "w": "43",
+      "l": "21",
+      "p": "92",
+      "gf": "245",
+      "ga": "195",
+      "diff": "50",
+      "strk": "L2"
+    },
+    {
+      "pos": "2",
+      "logo": "TBL",
+      "name": "Tampa Bay Lightning",
+      "gp": "70",
+      "w": "43",
+      "l": "21",
+      "p": "92",
+      "gf": "245",
+      "ga": "195",
+      "diff": "50",
+      "strk": "L2"
+    }
+  ]
+}

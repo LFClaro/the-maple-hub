@@ -49,7 +49,7 @@ To create a fan page for the Toronto Maple Leafs where users can view Player Sta
 
 **LUIZ**
 * **_League Stats_**
-  * This page will show the stats of the maple leafs through out a longer period of time - say 5 -10 years - and represents the league stats vs the maple leafs. For example how manys games the leafs wone in a year, losses, their play off results, player trades and more. This will provide a overview of the leafs performances over a longer period of time against other league champions (say for example who ever one the cup that year as a comparison).
+  * This page will show the standings of the teams in the league during the championship.
 * **_Video Highlights_**
   * This page will show videos of the best moments of the matches, highlighting the best goals and top plays. It will also display snippets from press conferences.
 * **_Social Media_**
