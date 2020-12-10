@@ -39,3 +39,4 @@ function reset(){
     document.getElementById("abr").innerHTML = "GP";
 }
 // create an array of objects 
+
