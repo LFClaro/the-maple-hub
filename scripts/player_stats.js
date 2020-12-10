@@ -19,7 +19,7 @@ function highlight_row() {
             rowSelected.style.backgroundColor = "gold";
             rowSelected.className += " selected";
 
-            msg = 'The player name is: ' + rowSelected.cells[0].querySelector('#player_name').innerHTML;
+            msg = 'The player name is: ' + rowSelected.cells[0].querySelector('.player_name').innerHTML;
             msg += '\nThe cell value is: ' + this.innerHTML;
             alert(msg);            
         }
