@@ -1,19 +1,10 @@
 
-// const s1 = document.createElement('option');
-// const s2 = document.createElement('option');
-// const s3 = document.createElement('option');
-// s1.textContent = document.getElementById('1').textContent;
-// s2.textContent = document.getElementById('2').textContent;
-// s3.textContent = document.getElementById('3').textContent;
-// const parent = document.getElementById('select');
-// parent.appendChild(s1);
-// parent.appendChild(s2);
-// parent.appendChild(s3);
-
+// This function is used to get elements by id
 const $ = function (id) {
     return document.getElementById(id);
 }
 
+// This function is used to select topic in the page
 function selection () {
     let opt;
     for (let index = 1; index < 4; index++) {
@@ -24,14 +15,13 @@ function selection () {
 
 selection();
 
+// For Submit button onclick event
 window.onload = function () {
     $('subButton').onclick = submitButton;
 }
 
+// This function is designed to add comment for articles
 function submitButton () {
-    
-    // if(new1.selection)
-    // {
         const t1 = document.createElement('h4');
         t1.textContent = $('name').value;
         const tt1 = document.createElement('p');
@@ -39,13 +29,49 @@ function submitButton () {
         const p1 = document.querySelector('#n1');
         p1.appendChild(t1);
         p1.appendChild(tt1);
+    }
+    
+    // if($('1').textContent === $('news1').textContent)
+    // {
+        // const t1 = document.createElement('h4');
+        // t1.textContent = $('name').value;
+        // const tt1 = document.createElement('p');
+        // tt1.textContent = $('com').value;
+        // const p1 = document.querySelector('#n1');
+        // p1.appendChild(t1);
+        // p1.appendChild(tt1);
 
-    //  }
-    //  else if ($('select').lastChild) {
+    // }
+    // else if ($('2').textContent === $('news2').textContent) {
+    //     const t1 = document.createElement('h4');
+    //     t1.textContent = $('name').value;
+    //     const tt1 = document.createElement('p');
+    //     tt1.textContent = $('com').value;
+    //     const p1 = document.querySelector('#n2');
+    //     p1.appendChild(t1);
+    //     p1.appendChild(tt1);
 
-    //  }
-    //  else {
+    // }
+    //   else {
+    //     const t1 = document.createElement('h4');
+    //     t1.textContent = $('name').value;
+    //     const tt1 = document.createElement('p');
+    //     tt1.textContent = $('com').value;
+    //     const p1 = document.querySelector('#n3');
+    //     p1.appendChild(t1);
+    //     p1.appendChild(tt1); }
+// }
 
-    //  }
+// For Clear button onclick event
 
+window.onload = function() {
+    $('clrBut').onclick = clearButton;
+}
+
+// This function is designed to clear the form
+function clearButton() {
+    $('name').value = "";
+    $('email').value = "";
+    $('com').value = "";
+    
 }

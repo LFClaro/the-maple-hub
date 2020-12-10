@@ -14,8 +14,10 @@ form fieldset{
 }
 .nDiv h4 {
     border-bottom: 1px solid black;
+    padding: 5px;
 }
 
 .nDiv p {
     font: normal normal .9em Arial, Sans-serif;
+    padding: 5px;
 }
