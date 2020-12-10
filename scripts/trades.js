@@ -8,9 +8,6 @@ function out(id) {
   id.style.color = 'white';
   id.style.fontSize = 'x-large';
 }
-
-// Get the img object using its Id 
-img = document.getElementById("profile"); 
 // Function to increase image size 
 function enlargeImg(id) { 
   // Set image size to 1.5 times original 
@@ -24,10 +21,20 @@ function reset(id) {
   id.style.transform = "scale(1)"; 
   id.style.transition = "transform 0.25s ease"; 
 } 
-
 // function to leave comments on trades
-// maybe use an array to display more than one comment?
-function comments() {
-  var x = document.getElementById("comBox").value;
-  document.getElementById("comment-here").innerHTML = x;
+//function comments() {
+  //var x = document.getElementById("comBox").value;
+  //document.getElementById("comment-here").innerHTML = x;
+//}
+function comments1(id) {
+  var x = id.value;
+  document.getElementById("comment-here1").innerHTML = x;
+}
+function comments2(id) {
+  var x = id.value;
+  document.getElementById("comment-here2").innerHTML = x;
+}
+function comments3(id) {
+  var x = id.value;
+  document.getElementById("comment-here3").innerHTML = x;
 }

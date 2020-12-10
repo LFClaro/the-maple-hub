@@ -76,6 +76,10 @@ img {
     margin: auto;
     cursor: pointer;
 }
+/* form adjustments */
+form {
+    display: inline-block;
+}
 
 /* original link for source below */
 a  {
@@ -169,6 +173,10 @@ a  {
         font-size: 16px;
         margin: auto;
         cursor: pointer;
+    }
+    /* form adjustments */
+    form {
+        display: inline-block;
     }
     /* original link for source below */
     a  {
