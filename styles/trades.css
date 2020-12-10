@@ -65,7 +65,7 @@ img {
 }
 
 /* button below */
-#button{ 
+.button{ 
     background-color: #021d3a;
     color: white;
     border: none;
@@ -163,7 +163,7 @@ a  {
     }   
 
     /* button below */
-    #button{ 
+    .button{ 
         background-color: #021d3a;
         color: white;
         border: none;
