@@ -8,59 +8,46 @@ const $ = function (id) {
 function selection () {
     let opt;
     for (let index = 1; index < 4; index++) {
-        opt += "<option id = \"" + "news" + index + "\">" + $(index).textContent + "</option>";      
+        opt += "<option id = \"" + "oNews" + index + "\">" + $('hnews' + index).textContent + "</option>";      
     }
-    $('select').innerHTML = opt;
+    $('selNews').innerHTML = opt;
 }
 
 selection();
 
-// For Submit button onclick event
-window.onload = function () {
-    $('subButton').onclick = submitButton;
-}
 
 // This function is designed to add comment for articles
 function submitButton () {
+    if($('hnews1').textContent == $('selNews').value)
+    {
         const t1 = document.createElement('h4');
         t1.textContent = $('name').value;
         const tt1 = document.createElement('p');
         tt1.textContent = $('com').value;
-        const p1 = document.querySelector('#n1');
+        const p1 = document.querySelector('#dn1');
         p1.appendChild(t1);
         p1.appendChild(tt1);
+
     }
-    
-    // if($('1').textContent === $('news1').textContent)
-    // {
-        // const t1 = document.createElement('h4');
-        // t1.textContent = $('name').value;
-        // const tt1 = document.createElement('p');
-        // tt1.textContent = $('com').value;
-        // const p1 = document.querySelector('#n1');
-        // p1.appendChild(t1);
-        // p1.appendChild(tt1);
+    else if ($('hnews2').textContent == $('selNews').value) {
+        const t1 = document.createElement('h4');
+        t1.textContent = $('name').value;
+        const tt1 = document.createElement('p');
+        tt1.textContent = $('com').value;
+        const p1 = document.querySelector('#dn2');
+        p1.appendChild(t1);
+        p1.appendChild(tt1);
 
-    // }
-    // else if ($('2').textContent === $('news2').textContent) {
-    //     const t1 = document.createElement('h4');
-    //     t1.textContent = $('name').value;
-    //     const tt1 = document.createElement('p');
-    //     tt1.textContent = $('com').value;
-    //     const p1 = document.querySelector('#n2');
-    //     p1.appendChild(t1);
-    //     p1.appendChild(tt1);
-
-    // }
-    //   else {
-    //     const t1 = document.createElement('h4');
-    //     t1.textContent = $('name').value;
-    //     const tt1 = document.createElement('p');
-    //     tt1.textContent = $('com').value;
-    //     const p1 = document.querySelector('#n3');
-    //     p1.appendChild(t1);
-    //     p1.appendChild(tt1); }
-// }
+    }
+      else {
+        const t1 = document.createElement('h4');
+        t1.textContent = $('name').value;
+        const tt1 = document.createElement('p');
+        tt1.textContent = $('com').value;
+        const p1 = document.querySelector('#dn3');
+        p1.appendChild(t1);
+        p1.appendChild(tt1); }
+}
 
 // For Clear button onclick event
 

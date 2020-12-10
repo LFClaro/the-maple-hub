@@ -68,7 +68,7 @@
         <main>
             <!-- fIRST NEWS -->
             <div title="Maple Leafs star Auston Matthews" id="first">
-                <h2 id="1">Maple Leafs star Auston Matthews tests positive for COVID-19</h2>
+                <h2 id="hnews1">Maple Leafs star Auston Matthews tests positive for COVID-19</h2>
                 <cite>Steve Simmons, www.torontosun.com / Jun 19, 2020</cite>
                 <figure>
                     <img src="../images/auston-matthews.jpg" alt="picture of austin matthews" style="width:100%; height: 100%; max-width: 500px;">
@@ -120,9 +120,11 @@
                     North America known to test positive for COVID-19. Former NBA star Patrick Ewing has tested positive, as well,
                     as has current NBA coach Mike Malone with the Denver Nuggets.
                 </p>
-                <div id="n1" class="nDiv">
-                    
+                <div id="dn1" class="nDiv">
+                    <!-- Comments will be located here -->
                 </div>
+
+                <!-- To go top of the page -->
                 <nav>
                     <a href="#first">Go to Top</a>
                 </nav>
@@ -130,7 +132,7 @@
             </div>
             <!-- SECOND NEWS -->
             <div title="no comment about covid19">
-                <h2 id="2">Maple Leafs won't comment on COVID-19 reports regarding players, staff</h2>
+                <h2 id="hnews2">Maple Leafs won't comment on COVID-19 reports regarding players, staff</h2>
                 <cite>TSN.ca Staff</cite>
                 <figure>
                     <img src="../images/scotia-arena.jpg" alt="a photo of scotia arena" style="width:100%; height: 100%; max-width: 500px;">
@@ -161,10 +163,11 @@
                 <p>Last week, a Boston Bruins player became the 10th NHLer to have a confirmed case of the novel coronavirus.</p>
     
                 <p>NHL training camps, otherwise known as Phase 3 of the league’s return-to-play plan, are expected to start on July 10.</p>
-                <div id="n2" class="nDiv">
-
+                <div id="dn2" class="nDiv">
+                        <!-- Comments will be located here -->
                 </div>
-    
+
+                <!-- To go top of the page -->
                 <nav>
                     <a href="#first">Go to Top</a>
                 </nav>
@@ -172,7 +175,7 @@
 
             <!-- THIRD NEWS -->
             <div title="Lehtonen talks about covid19 among Leafs">
-                <h2 id="3">Lehtonen talks COVID-19 diagnosis, competing for spot on Leafs blueline</h2>
+                <h2 id="hnews3">Lehtonen talks COVID-19 diagnosis, competing for spot on Leafs blueline</h2>
                 <cite>Kristen Shilton TSN Toronto Maple Leafs Reporter</cite>
                 <figure>
                     <img src="../images/lehtonen.jpg" alt="photo of Lehtonen" style="width:100%; height: 100%; max-width:500px;">
@@ -244,18 +247,19 @@
                     When Lehtonen does get settled in with the Leafs, there’s likely to be some excitement over potentially sharing the ice with . Lehtonen had been idolizing the veteran for years before Thornton inked a one-year deal with Toronto in October, and now they’ll both be wearing the same sweater next season. 
                     “That’s amazing,” Lehtonen said of being Thornton’s teammate. “Like, I have played PlayStation with him many times when I was a kid. …He was one of the players who you look up to and it’s going to be exciting to meet him as a person and see how big he plays and in practice on a daily basis.”
                 </p>
-                <div id="n3" class="nDiv">
-                    
+                <div id="dn3" class="nDiv">
+                    <!-- Comments will be located here -->
                 </div>
+                <!-- To go top of the page -->
                 <nav>
-                    <a href="#first">Go to Top</a>
+                    <a href="#first">Go to Top</a> 
                 </nav> <br>
             </div>
             <form action="#">
                 <fieldset>
                     <legend>Comments : </legend>
                     <label for="select">Select Article : </label> <br> <br>
-                    <select name="titles" id="select">
+                    <select name="titles" id="selNews">
                         
                     </select><br><br>
                     <label for="name">Name : &nbsp; </label>
@@ -264,8 +268,8 @@
                     <input type="text" id="email" name="userEmail" placeholder="email@email.com"><br><br>
                     <label for="com">Comment :</label><br><br>
                     <textarea name="newsCom" id="com" cols="60%" rows="10%" placeholder="Add your comment" ></textarea><br><br>
-                    <input type="button" value="Submit" id="subButton">
-                    <input type="reset" value="Clear" id="clrBut">  
+                    <input type="button" value="Submit" id="subButton" onclick="submitButton();">
+                    <input type="button" value="Clear" id="clrBut">  
                 </fieldset>
             </form>
         
