@@ -1,14 +1,12 @@
 //function to change color and font size of og
-function hover() {
-    var x = document.getElementById("box-a");
-    x.style.color = 'gold'
-    x.style.fontSize = 'xx-large'
+function hover(id) {
+  id.style.color = 'gold';
+  id.style.fontSize = 'xx-large';
 }
 //function to change back to og
-function out() {
-    var x = document.getElementById("box-a");
-    x.style.color = 'white';
-    x.style.fontSize = 'x-large'
+function out(id) {
+  id.style.color = 'white';
+  id.style.fontSize = 'x-large';
 }
 
 // Get the img object using its Id 

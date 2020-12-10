@@ -19,9 +19,9 @@ function highlight_row() {
             rowSelected.style.backgroundColor = "gold";
             rowSelected.className += " selected";
 
-            msg = 'The player name is: ' + rowSelected.cells[0].innerHTML;
+            msg = 'The player name is: ' + rowSelected.cells[0].querySelector('#player_name').innerHTML;
             msg += '\nThe cell value is: ' + this.innerHTML;
-            alert(msg);
+            alert(msg);            
         }
     }
 
@@ -38,3 +38,4 @@ function display(){
 function reset(){
     document.getElementById("abr").innerHTML = "GP";
 }
+// create an array of objects 
