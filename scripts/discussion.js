@@ -1,7 +1,3 @@
-const $$ = function (id) {
-    document.getElementById(id);
-}
-
 "use strict";
 $(document).ready(function() {
     $("#disc h3").click(function(evt) {
