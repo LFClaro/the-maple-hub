@@ -1,4 +1,3 @@
-
 // This function is used to get elements by id
 const $ = function (id) {
     return document.getElementById(id);
