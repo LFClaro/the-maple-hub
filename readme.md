@@ -38,7 +38,7 @@ To create a fan page for the Toronto Maple Leafs where users can view Player Sta
   * This page will have messages and discussion boards for registered members. Discussion boards will vary between predictions, news repercutions and general talk about the Toronto Maple Leafs.
 
 **TIM**
-* **_Individual Player Stats_** 
+* **_Individual Player/Goalie Stats_** 
   * This page will display the statistsics for each individual player and allow you to navigate between the players on the maple leafs to see each individuals stats. The statistics will be presented up to date, for example; goals, assists, points, shots, shooting % and more.
 * **_News_**
   * The news page related with team's latest condition and information about players, leage and some valuable infromation for the audience.
