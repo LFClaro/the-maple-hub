@@ -23,6 +23,15 @@
       opacity: 90%;
     }
 
+    tbody a {
+      color: black;
+      text-decoration: none;
+    }
+
+    tbody tr:hover a {
+      color: white;
+    }
+
     table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after {
       white-space: pre;
       content: "\a \25B3\25BD";
@@ -43,11 +52,12 @@
   <!-- Additional JS info -->
   <script src="../scripts/league_stats.js"></script>
   <script>
-    $(document).tooltip();
-    $("#BOB").tooltip({ content: '<img src="../images/teams/BOB.png" />' });
-    $("#TBL").tooltip({ content: '<img src="../images/teams/TBL.png" />' });
+    $(function () {
+      $(document).tooltip();
+      $("#BOB").tooltip({ content: '<img src="../images/teams/BOB.png" />' });
+    })
   </script>
-  <title>The Maple Hub - League Stats</title>
+  <title>The Maple Hub - League Standings</title>
 </head>
 
 <body>
@@ -55,7 +65,7 @@
     <h1>The Maple Hub</h1>
     <!-- NAVIGATION MENU -->
     <nav>
-      <a href="../home.html">Home</a>
+      <a href="../index.html">Home</a>
       <a href="../lucas_code/schedule.html">Schedule</a>
       <a href="../tim_code/roster.html">Roster</a>
       <div class="dropdown">
@@ -76,7 +86,7 @@
         </button>
         <div class="dropdown-content">
           <a href="../luiz_code/social_media.html">Social Media</a>
-          <a href="#">Video Highlights</a>
+          <a href="../luiz_code/video.html">Video Highlights</a>
         </div>
       </div>
       <div class="dropdown">
@@ -119,11 +129,12 @@
             <th title="Goals For">GF</th>
             <th title="Goals Against">GA</th>
             <th title="Difference">Diff</th>
+            <th title="Last Ten Games">L10</th>
             <th title="Streak">Strk</th>
           </tr>
         </thead>
         <tbody id="tbody">
-          
+          <!-- TABLE INFO INCLUDED IN teams.json -->
         </tbody>
       </table>
     </div>

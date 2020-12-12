@@ -1,6 +1,4 @@
-const $$ = function (id) {
-    document.getElementById(id);
-}
+//This function is used to show or hide discussions
 
 "use strict";
 $(document).ready(function() {
@@ -13,14 +11,16 @@ $(document).ready(function() {
             $(this).next().show();
         }
         evt.preventDefault();
-    }); // end click
+    }); 
     $("#disc").find("a:first").focus();
-}); // end ready
+}); 
 
+//This function direct reader to sign in page
 function signIn() {
     location.href = "../lucas_code/login.html";
 }
 
+//This function direct reader to sign up page
 function members() {
-    location.href = "../luiz_code/become_member.html"
+    location.href = "../luiz_code/become_member.html";
 }
