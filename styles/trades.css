@@ -65,7 +65,7 @@ img {
 }
 
 /* button below */
-#button{ 
+.button{ 
     background-color: #021d3a;
     color: white;
     border: none;
@@ -75,6 +75,10 @@ img {
     font-size: 16px;
     margin: auto;
     cursor: pointer;
+}
+/* form adjustments */
+form {
+    display: inline-block;
 }
 
 /* original link for source below */
@@ -159,7 +163,7 @@ a  {
     }   
 
     /* button below */
-    #button{ 
+    .button{ 
         background-color: #021d3a;
         color: white;
         border: none;
@@ -169,6 +173,10 @@ a  {
         font-size: 16px;
         margin: auto;
         cursor: pointer;
+    }
+    /* form adjustments */
+    form {
+        display: inline-block;
     }
     /* original link for source below */
     a  {

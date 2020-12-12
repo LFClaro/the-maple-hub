@@ -70,21 +70,21 @@
         <thead role="rowgroup">
           <tr role="row">
             <th role="columnheader">Player</th>
-            <th role="columnheader" id="abr" onmouseover="display()" onmouseout="reset()">GP</th> 
-            <th role="columnheader">G</th>
-            <th role="columnheader">A</th>
-            <th role="columnheader">P</th>
-            <th role="columnheader">+/-</th> 
-            <th role="columnheader">PIM</th>
-            <th role="columnheader">PPG</th>
-            <th role="columnheader">PPP</th> 
-            <th role="columnheader">SHG</th>
-            <th role="columnheader">SHP</th>
-            <th role="columnheader">GWG</th> 
-            <th role="columnheader">OTG</th>
-            <th role="columnheader">S</th>
-            <th role="columnheader">S%</th> 
-            <th role="columnheader">FO%</th>
+            <th role="columnheader" onmouseover="this.innerHTML = 'Games Played';" onmouseout="this.innerHTML='GP'">GP</th> 
+            <th role="columnheader" onmouseover="this.innerHTML = 'Goals';" onmouseout="this.innerHTML='G'">G</th>
+            <th role="columnheader" onmouseover="this.innerHTML = 'Assists';" onmouseout="this.innerHTML='A'">A</th>
+            <th role="columnheader" onmouseover="this.innerHTML = 'Points';" onmouseout="this.innerHTML='P'">P</th>
+            <th role="columnheader" onmouseover="this.innerHTML = 'Plus/Minus';" onmouseout="this.innerHTML='+/-'">+/-</th> 
+            <th role="columnheader" onmouseover="this.innerHTML = 'Penalty Minutes';" onmouseout="this.innerHTML='PIM'">PIM</th>
+            <th role="columnheader" onmouseover="this.innerHTML = 'Power Play Goals';" onmouseout="this.innerHTML='PPG'">PPG</th>
+            <th role="columnheader" onmouseover="this.innerHTML = 'Power Play Points';" onmouseout="this.innerHTML='PPP'">PPP</th> 
+            <th role="columnheader" onmouseover="this.innerHTML = 'Shorthanded Goals';" onmouseout="this.innerHTML='SHG'">SHG</th>
+            <th role="columnheader" onmouseover="this.innerHTML = 'Shorthanded Points';" onmouseout="this.innerHTML='SHP'">SHP</th>
+            <th role="columnheader" onmouseover="this.innerHTML = 'Game Winning Goals';" onmouseout="this.innerHTML='GWG'">GWG</th> 
+            <th role="columnheader" onmouseover="this.innerHTML = 'Overtime Goals';" onmouseout="this.innerHTML='OTG'">OTG</th>
+            <th role="columnheader" onmouseover="this.innerHTML = 'Shots';" onmouseout="this.innerHTML='S'">S</th>
+            <th role="columnheader" onmouseover="this.innerHTML = 'Shooting %';" onmouseout="this.innerHTML='S%'">S%</th> 
+            <th role="columnheader" onmouseover="this.innerHTML = 'Face-Off Win %';" onmouseout="this.innerHTML='FO%'">FO%</th>
           </tr>
         </thead>
         <tbody role="rowgroup">
@@ -93,7 +93,7 @@
             onmouseover="document.getElementById('mlph').src='../images/auston-matthews-2020-38.jpg';"
             onmouseout="document.getElementById('mlph').src='../images/MLPH.png';" >
             <img id="mlph" src="../images/MLPH.png" alt="Maple leaf place holder" style="max-width: 15%;">    
-            <span id="div">A.Matthews</span>            
+            <span class="player_name">A.Matthews</span>            
             </td>
             <td role="cell">70</td>
             <td role="cell">47</td>
@@ -112,7 +112,12 @@
             <td role="cell">55</td>
           </tr>
           <tr role="row">
-            <td role="cell">M.Marner</td>
+            <td role="cell"
+            onmouseover="document.getElementById('mlph2').src='../images/mitch-marner-2019-38.jpg';"
+            onmouseout="document.getElementById('mlph2').src='../images/MLPH.png';">
+            <img id="mlph2" src="../images/MLPH.png" alt="Maple leaf place holder" style="max-width: 15%;">
+                <span class="player_name">M.Marner</span>
+            </td>
             <td role="cell">59</td>
             <td role="cell">16</td>
             <td role="cell">51</td>
@@ -130,7 +135,11 @@
             <td role="cell">26.92</td>
           </tr>
           <tr role="row">
-            <td role="cell">J.Tavares</td>
+            <td role="cell"
+            onmouseover="document.getElementById('mlph3').src='../images/john-tavares-2019-38.jpg';"
+            onmouseout="document.getElementById('mlph3').src='../images/MLPH.png';">
+            <img id="mlph3" src="../images/MLPH.png" alt="Maple leaf place holder" style="max-width: 15%;">
+            <span  class="player_name">J.Tavares</span></td>
             <td role="cell">63</td>
             <td role="cell">26</td>
             <td role="cell">34</td>
@@ -148,7 +157,11 @@
             <td role="cell">55.29</td>
           </tr>
           <tr role="row">
-            <td role="cell">W.Nylander</td>
+            <td role="cell"
+            onmouseover="document.getElementById('mlph4').src='../images/nyland.jpg';"
+            onmouseout="document.getElementById('mlph4').src='../images/MLPH.png';">
+            <img id="mlph4" src="../images/MLPH.png" alt="Maple leaf place holder" style="max-width: 15%;">
+            <span class="player_name">W.Nylander</span></td>
             <td role="cell">68</td>
             <td role="cell">31</td>
             <td role="cell">28</td>
@@ -166,7 +179,11 @@
             <td role="cell">50</td>
           </tr>
           <tr role="row">
-            <td role="cell">T.Barrie</td>
+            <td role="cell"
+            onmouseover="document.getElementById('mlph5').src='../images/t.barrie.jpg';"
+            onmouseout="document.getElementById('mlph5').src='../images/MLPH.png';">
+            <img id="mlph5" src="../images/MLPH.png" alt="Maple leaf place holder" style="max-width: 15%;">
+            <span class="player_name">T.Barrie</span></td>
             <td role="cell">70</td>
             <td role="cell">5</td>
             <td role="cell">34</td>

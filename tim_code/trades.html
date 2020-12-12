@@ -67,13 +67,13 @@
             Trades 
         </h2>    
         <div class="wrappertb">        
-            <div class="box a" id="box-a" onmouseover="hover()" onmouseout="out()">Joey Anderson, RW - Contract extended Three-year, two-way contract extension</div>           
+            <div class="box a" id="box1" onmouseover="hover(this)" onmouseout="out(this)">Joey Anderson, RW - Contract extended Three-year, two-way contract extension</div>           
             <div class="box b">
                 <div class="box c" onmouseover="this.style.color='gold';" onmouseout="this.style.color='#021d3a'">
                     Fri, Oct 30
                 </div>                 
                 <div class="box d">
-                    <img src="../images/joey-anderson-2019-51.jpg" alt="Joey Anderson" id="profile" onclick="enlargeImg()" ondblclick="reset()">
+                    <img src="../images/joey-anderson-2019-51.jpg" alt="Joey Anderson" id="profile" onclick="enlargeImg(this)" ondblclick="reset(this)">
                     <div class="text">
                         The Toronto Maple Leafs signed forward Joey Anderson to a three-year contract, 
                         the team announced Friday.
@@ -107,23 +107,23 @@
                         <br>
                     </div>
                 <form>
-                    <input type="text" id="comBox" value="leave your comments here!" style="height:50px;width:300px;font-size:10pt;">
+                    <input type="text" value="leave your comments here!" style="height:50px;width:300px;font-size:10pt;">
                     <br>
-                    <input type="button" id="button" onclick="comments()" value="Join the discussion and leave a comment!" />
-                    <p id="comment-here" style="text-align: center;"></p>
+                    <input type="button" class="button" id="button1" onclick="comments1(this)" value="Join the discussion and leave a comment!" />
+                    <p class="test" id="comment-here1" style="text-align: center;"></p>
                 </form>
                 </div>
             </div>
         </div>
         <br>
         <div class="wrapper">        
-            <div class="box a">Michael Hutchinson, G - Signed as Free Agent Two-year, two-way contract</div>          
+            <div class="box a" id="box2" onmouseover="hover(this)" onmouseout="out(this)">Michael Hutchinson, G - Signed as Free Agent Two-year, two-way contract</div>          
             <div class="box b">
                 <div class="box c" onmouseover="this.style.color='gold';" onmouseout="this.style.color='#021d3a'">
                     Fri, Oct 30
                 </div>                 
                 <div class="box d">
-                    <img src="../images/michael-hutchinson-2020-38.jpg" alt="Michael Hutchinson">
+                    <img src="../images/michael-hutchinson-2020-38.jpg" alt="Michael Hutchinson" id="profile2" onclick="enlargeImg(this)" ondblclick="reset(this)">
                     <div class="text">
                         Michael Hutchinson signed a two-year, two-way contract with the Toronto Maple Leafs on Friday. 
                         It has an average annual value of $725,000 at the NHL level.
@@ -155,20 +155,23 @@
                         <br>
                     </div>
                 <form>
-                    <input type="button" onclick="window.location.href='../tim_code/new.html';" value="Join the discussion!" />
+                    <input type="text" value="leave your comments here!" style="height:50px;width:300px;font-size:10pt;">
+                    <br>
+                    <input type="button" class="button" id="button2" onclick="comments2(this)" value="Join the discussion and leave a comment!" />
+                    <p class="test" id="comment-here2" style="text-align: center;"></p>
                 </form>
                 </div>
             </div>
         </div>
         <br>
         <div class="wrapper">        
-            <div class="box a">Mac Hollowell, D - Assigned to European Team TUTO-Finland</div>            
+            <div class="box a" id="box3" onmouseover="hover(this)" onmouseout="out(this)">Mac Hollowell, D - Assigned to European Team TUTO-Finland</div>            
             <div class="box b">
                 <div class="box c" onmouseover="this.style.color='gold';" onmouseout="this.style.color='#021d3a'">
                     Wed, Oct 28
                 </div>                 
                 <div class="box d">
-                    <img src="../images/mac-hollowell-2019-38.jpg" alt="Mac Hollowell">
+                    <img src="../images/mac-hollowell-2019-38.jpg" alt="Mac Hollowell" id="profile3" onclick="enlargeImg(this)" ondblclick="reset(this)">
                     <div class="text">
                         The Leafs found a home for another Marlie in Europe. 
                         This morning they announced that Mac Hollowell is off to Finland…
@@ -197,7 +200,10 @@
                         <br>
                     </div>
                 <form>
-                    <input type="button" onclick="window.location.href='../tim_code/new.html';" value="Join the discussion!" />
+                    <input type="text" value="leave your comments here!" style="height:50px;width:300px;font-size:10pt;">
+                    <br>
+                    <input type="button" class="button" id="button3" onclick="comments3(this)" value="Join the discussion and leave a comment!" />
+                    <p class="test" id="comment-here3" style="text-align: center;"></p>
                 </form>
                 </div>
             </div>
