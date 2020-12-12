@@ -27,14 +27,14 @@ function reset(id) {
   //document.getElementById("comment-here").innerHTML = x;
 //}
 function comments1(id) {
-  var x = id.value;
+  var x = document.getElementById("c1").value;
   document.getElementById("comment-here1").innerHTML = x;
 }
 function comments2(id) {
-  var x = id.value;
+  var x = document.getElementById("c2").value;
   document.getElementById("comment-here2").innerHTML = x;
 }
 function comments3(id) {
-  var x = id.value;
+  var x = document.getElementById("c3").value;
   document.getElementById("comment-here3").innerHTML = x;
 }
