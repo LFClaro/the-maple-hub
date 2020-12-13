@@ -1,49 +1,66 @@
 "use strict";
 
-    let $ = function (id) {
-      return document.getElementById(id);
-    };
+      let $ = function(id) {
+          return document.getElementById(id);
+      };
 
-    function findUser(name, email, password) {
-      let index = db.users.indexOf('{"name": "' + name + '", "email": "' + email + '", "password": "' + password + '"}');
-      return index;
-    }
-
-    function addUser(name, email) {
-      if (findUser(name, email) == -1) {
-        db.users.push('{"name": "' + name + '", "email": "' + email + '"}');
+      function setRmbrEmail(enable, email, password){
+        db.config.rmbrEmail.enable = (enable ? "true" : "false");
+        if (enable) {
+          db.config.rmbrEmail.email = email;
+          db.config.rmbrEmail.password = password;
+        } else {
+          db.config.rmbrEmail.email = "";
+          db.config.rmbrEmail.password = "";
+        }
         localStorage.setItem("dbJSON", JSON.stringify(db));
-        document.getElementById("debug").innerHTML = db.users;
-        return true;
       }
 
-      return false;
-    }
-
-    function removeUser(name, email) {
-      let index = findUser(name, email);
-
-      if (index > -1) {
-        db.users.splice(index, 1);
-        localStorage.setItem("dbJSON", JSON.stringify(db));
-        document.getElementById("debug").innerHTML = db.users;
-        return true;
+      function findUser(email) {
+        let index = db.usrEmails.indexOf('{"email": "' + email + '"}');
+        return index;
       }
 
-      return false;
-    }
+      function addUser(email, name, password, reminder, birthday, heardAboutUs, chkRcvMsg) {
+        if (findUser(email) == -1) {
+          db.usrEmails.push('{"email": "' + email + '"}');
+          db.usrDetails.push('{"name": "' + name + '", "password": "' + password + '", "reminder": "' + reminder + '", "birthday": "' + birthday + '", "heardAboutUs": "' + heardAboutUs + '", "chkRcvMsg": "' + chkRcvMsg + '"}');
+          localStorage.setItem("dbJSON", JSON.stringify(db));
+          document.getElementById("debug").innerHTML = JSON.stringify(db);
+          return true;
+        }
 
-    let db;
-    let dbJSON = localStorage.getItem("dbJSON");
+        return false;
+      }
 
-    if (!dbJSON) {
-      dbJSON = '{"users": [], "config": {"rmbrEmail": {"enable": "Y", "name": "lucas", "email": "lucasemail"}}}';
-      localStorage.setItem("dbJSON", dbJSON);
-    }
+      function removeUser(email) {
+        let index = findUser(email);
 
-    db = JSON.parse(dbJSON);
+        if (index > -1) {
+          db.usrEmails.splice(index, 1);
+          db.usrDetails.splice(index, 1);
+          localStorage.setItem("dbJSON", JSON.stringify(db));
+          document.getElementById("debug").innerHTML = JSON.stringify(db);
+          return true;
+        }
 
-    if (db.config.rmbrEmail.enable == "Y") {
-      $("name").value = db.config.rmbrEmail.name;
-      $("email").value = db.config.rmbrEmail.email;
-    }
+        return false;
+      }
+
+      let db;
+      let dbJSON = localStorage.getItem("dbJSON");
+
+      localStorage.clear();
+
+      if (!dbJSON) {  
+        dbJSON = '{"usrEmails": [], "usrDetails": [], "config": {"rmbrEmail": {"enable": "false", "email": "", "password": ""}}}';
+        localStorage.setItem("dbJSON", dbJSON);
+      }
+
+      db = JSON.parse(dbJSON);
+
+      if (db.config.rmbrEmail.enable == "true") {
+        $("rmbrEmail").checked = true;
+        $("email").value = db.config.rmbrEmail.email;
+        $("password").value = db.config.rmbrEmail.password;
+      }

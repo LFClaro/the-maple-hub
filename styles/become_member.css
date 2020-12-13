@@ -47,7 +47,7 @@ textarea {
 #radio1,
 #radio2,
 #radio3,
-#checkbox {
+#chkRcvMsg {
   padding: 0;
 }
 
@@ -81,7 +81,7 @@ textarea {
   background-color: #ffffff;
 }
 
-#button {
+#button{
   float: right;
   font-size: large;
   border: none;
