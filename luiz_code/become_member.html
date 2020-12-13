@@ -98,7 +98,7 @@
                             <label for="password">Password:</label>
                         </div>
                         <div class="col-75">
-                            <input type="password" placeholder="Minimum of 6 characters" id="password" name="password"
+                            <input type="password" placeholder="Minimum of 6 characters. Must include uppercase and a number." id="password" name="password"
                                 minlength="6" required /><span class="validity"></span><br />
                         </div>
                     </div>
@@ -119,6 +119,15 @@
                                     }
                                 }
                             </script><br />
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="col-25">
+                            <label for="rem">Password Reminder:</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" id="reminder" placeholder="A keyword reminder you can use if you forget your password." name="reminder" required><span
+                                class="validity"></span><br />
                         </div>
                     </div>
                     <div class="form_row">
