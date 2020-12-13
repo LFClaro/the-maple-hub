@@ -9,46 +9,13 @@
     content="nhl, league stats, standings, Toronto Maple Leafs, Leafs, Maple Leafs, hockey, hockey team, Toronto sports, Toronto" />
   <link rel="stylesheet" href="../styles/normalize.css">
   <link rel="stylesheet" href="../styles/main.css">
-  /* Additionnal styles */
+  <!-- Additionnal styles -->
   <link rel="stylesheet" href="../styles/video.css">
+  <link rel="shortcut icon" href="../images/faviconLEAFS.ico">
   <!-- VIDEO SLIDER JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://www.youtube.com/iframe_api"></script>
-  <script>
-    $(document).ready(function () {
-    var pos = 0,
-        slides = $('.slide'),
-        numOfSlides = slides.length;
-
-    function nextSlide() {
-        // `[]` returns a vanilla DOM object from a jQuery object/collection
-        slides[pos].video.stopVideo()
-        slides.eq(pos).animate({ left: '-100%' }, 500);
-        pos = (pos >= numOfSlides - 1 ? 0 : ++pos);
-        slides.eq(pos).css({ left: '100%' }).animate({ left: 0 }, 500);
-    }
-
-    function previousSlide() {
-        slides[pos].video.stopVideo()
-        slides.eq(pos).animate({ left: '100%' }, 500);
-        pos = (pos == 0 ? numOfSlides - 1 : --pos);
-        slides.eq(pos).css({ left: '-100%' }).animate({ left: 0 }, 500);
-    }
-
-    $('.left').click(previousSlide);
-    $('.right').click(nextSlide);
-})
-
-function onYouTubeIframeAPIReady() {
-    $('.slide').each(function (index, slide) {
-        // Get the `.video` element inside each `.slide`
-        var iframe = $(slide).find('.video')[0]
-        // Create a new YT.Player from the iFrame, and store it on the `.slide` DOM object
-        slide.video = new YT.Player(iframe)
-    })
-}
-  </script>
-  <link rel="shortcut icon" href="../images/faviconLEAFS.ico">
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="../scripts/video_slider.js"></script>
   <title>The Maple Hub - Video Highlights</title>
 </head>
 
@@ -111,23 +78,33 @@ function onYouTubeIframeAPIReady() {
     <div class="video-slider">
       <!-- SLIDE 1 -->
       <div class="slide">
-        <iframe class="video" src="https://www.youtube.com/embed/u6QD3R4QC-Y?ecver=2&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/u6QD3R4QC-Y?ecver=2&enablejsapi=1" width="640" height="300"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
       <!-- SLIDE 2 -->
       <div class="slide">
-        <iframe class="video" src="https://www.youtube.com/embed/fO1BhCY2onI?ecver=2&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/fO1BhCY2onI?ecver=2&enablejsapi=1" width="640" height="300"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
       <!-- SLIDE 3 -->
       <div class="slide">
-        <iframe class="video" src="https://www.youtube.com/embed/oKIMbq02keA?ecver=2&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/oKIMbq02keA?ecver=2&enablejsapi=1" width="640" height="300"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
       <!-- SLIDE 4 -->
       <div class="slide">
-        <iframe class="video" src="https://www.youtube.com/embed/TkdEHl0-Q-4?ecver=2&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/TkdEHl0-Q-4?ecver=2&enablejsapi=1" width="640" height="300"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
       <!-- SLIDE 5 -->
       <div class="slide">
-        <iframe class="video" src="https://www.youtube.com/embed/rFxyA2gKl0I?ecver=2&enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="video" src="https://www.youtube.com/embed/rFxyA2gKl0I?ecver=2&enablejsapi=1" width="640" height="300"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
       <!-- END OF SLIDES -->
       <div class="slide-arrow left"></div>

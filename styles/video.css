@@ -1,14 +1,13 @@
 p {
-    text-align: center;
+  text-align: center;
 }
 
 .video-slider {
   margin: auto;
-  width: 80%;
-  height: 30em;
-  /* background: #444; */
+  height: 0;
   position: relative;
   overflow: hidden;
+  padding-bottom: 56.25%;
 }
 .slide {
   position: absolute;
@@ -23,9 +22,11 @@ p {
   left: 0;
 }
 .video {
+  left: 0;
+  top: 0;
   height: 100%;
   width: 100%;
-  border: 0;
+  position: absolute;
 }
 .slide-arrow {
   color: white;
@@ -35,7 +36,7 @@ p {
   height: 45%;
   width: 15%;
   cursor: pointer;
-  opacity: .5;
+  opacity: 0.5;
 }
 .slide-arrow:hover {
   opacity: 1;
