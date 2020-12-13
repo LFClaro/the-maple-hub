@@ -11,71 +11,7 @@
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/become_member.css">
     <!-- CREATE JSON LOCAL STORAGE -->
-    <script>"use strict";
-
-        let $ = function (id) {
-            return document.getElementById(id);
-        };
-
-        function setRmbrEmail(enable, email, password) {
-            db.config.rmbrEmail.enable = (enable ? "true" : "false");
-            if (enable) {
-                db.config.rmbrEmail.email = email;
-                db.config.rmbrEmail.password = password;
-            } else {
-                db.config.rmbrEmail.email = "";
-                db.config.rmbrEmail.password = "";
-            }
-            localStorage.setItem("dbJSON", JSON.stringify(db));
-        }
-
-        function findUser(email) {
-            let index = db.usrEmails.indexOf('{"email": "' + email + '"}');
-            return index;
-        }
-
-        function addUser(email, name, password, reminder, dob, radio, chkRcvMsg) {
-            if (findUser(email) == -1) {
-                db.usrEmails.push('{"email": "' + email + '"}');
-                db.usrDetails.push('{"name": "' + name + '", "password": "' + password + '", "reminder": "' + reminder + '", "birthday": "' + birthday + '", "heardAboutUs": "' + heardAboutUs + '", "chkRcvMsg": "' + chkRcvMsg + '"}');
-                localStorage.setItem("dbJSON", JSON.stringify(db));
-                document.getElementById("debug").innerHTML = JSON.stringify(db);
-                return true;
-            }
-
-            return false;
-        }
-
-        function removeUser(email) {
-            let index = findUser(email);
-
-            if (index > -1) {
-                db.usrEmails.splice(index, 1);
-                db.usrDetails.splice(index, 1);
-                localStorage.setItem("dbJSON", JSON.stringify(db));
-                document.getElementById("debug").innerHTML = JSON.stringify(db);
-                return true;
-            }
-
-            return false;
-        }
-
-        let db;
-        let dbJSON = localStorage.getItem("dbJSON");
-
-        if (!dbJSON) {
-            dbJSON = '{"usrEmails": [], "usrDetails": [], "config": {"rmbrEmail": {"enable": "false", "email": "", "password": ""}}}';
-            localStorage.setItem("dbJSON", dbJSON);
-        }
-
-        db = JSON.parse(dbJSON);
-
-        if (db.config.rmbrEmail.enable == "true") {
-            $("rmbrEmail").checked = true;
-            $("email").value = db.config.rmbrEmail.email;
-            $("password").value = db.config.rmbrEmail.password;
-        }
-    </script>
+    <script src="../scripts/become_member.js"></script>
     <link rel="shortcut icon" href="../images/faviconLEAFS.ico">
     <title>The Maple Hub - Become a Member</title>
 </head>
@@ -134,13 +70,12 @@
     </header>
     <!-- MAIN CONTENT -->
     <main>
-        <div id="debug"></div>
         <h2>Become a Member</h2>
         <p style="text-align: center;">Get instant access to <span style="font-variant:small-caps;">The Maple Hub's
                 Fan Zone</span>, a platform to unite all Leafs
             Fans!</p>
         <div class="container">
-            <form id="signup" method="get">
+            <form id="signup" method="get" action="register_thankyou.html">
                 <fieldset>
                     <legend>Account Information</legend>
                     <div class="form_row">
@@ -167,8 +102,8 @@
                         <div class="col-75">
                             <input type="password"
                                 placeholder="Minimum of 6 characters. Must include uppercase and a number."
-                                id="password" name="password" minlength="6" required /><span
-                                class="validity"></span><br />
+                                id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" required />
+                            <span class="validity"></span>
                         </div>
                     </div>
                     <div class="form_row">
@@ -192,7 +127,7 @@
                     </div>
                     <div class="form_row">
                         <div class="col-25">
-                            <label for="reminder">Password Reminder:</label>
+                            <label for="reminder">Reminder:</label>
                         </div>
                         <div class="col-75">
                             <input type="text" id="reminder"
@@ -225,10 +160,8 @@
                         Boards!
                     </label><br /><br />
                 </fieldset>
-                <!-- <input type="submit" name="submit" id="button" value="Register to the Fan Zone!" /> -->
-                <input type="button" id="button" value="Add User"
-                    onclick="addUser($('email').value, $('name').value, $('password').value, $('reminder').value, $('dob').value, $('radio').true, $('chkRcvMsg').checked ? 'true' : 'false'); setRmbrEmail($('rmbrEmail').checked, $('email').value, $('password').value)"><br><br>
-                <input type="button" value="Remove User" onclick="removeUser($('email').value)"><br><br>
+                <input type="submit" id="button" value="Register to the Fan Zone!"
+                    onclick="addUser($('email').value, $('name').value, $('password').value, $('reminder').value, $('dob').value, document.querySelector('input[name=\'hear\']:checked').value, $('chkRcvMsg').checked ? 'true' : 'false')">
             </form>
         </div>
     </main>
