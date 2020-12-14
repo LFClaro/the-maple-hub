@@ -1,6 +1,6 @@
 main input[type=email],
 main input[type=password] {
-	min-width: 350px;
+	min-width: 372px;
 	height: 30px;
 	margin: 5px;
 }
@@ -12,8 +12,25 @@ main input[type=checked] {
 main div form fieldset a {
 	float: right;
 	margin-bottom: 17px;
+	text-decoration: none;
 }
 
+main div form fieldset a:link,
+main div form fieldset a:visited,
+main div form fieldset a:hover,
+main div form fieldset a:active {
+	color: black;
+}
+
+#loginSuccess {
+	color: green;
+}
+
+#loginFail {
+	color: red;
+}
+
+/* Responsive style */
 @media only screen and (min-width: 0px) and (max-width: 592px) {
 	main input[type=email],
 	main input[type=password] {
@@ -30,5 +47,9 @@ main div form fieldset a {
 		margin-bottom: 0;
 		display: block;
 		float: none;
+	}
+
+	#status {
+		max-width: 213px;
 	}
 }
