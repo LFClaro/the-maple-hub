@@ -46,17 +46,18 @@ main table {
 	font-size: 0.875em;
 	text-align: left;
 	width: 100%;
-	height: 900px;
+}
+
+.grid-calendar-item, .grid-calendar-item-event {
+	color: white;
+	min-height: 180px;
 }
 
 .grid-calendar-item {
 	border: 1px solid black;
-	color: white;
 }
 
 .grid-calendar-item-event {
-	color: white;
-	border: 1px solid black;
 	background-color: rgba(0, 0, 255, 0.575);
 	cursor: pointer;
 }
@@ -72,16 +73,59 @@ main table {
 	width: 30%;
 	min-width: 30px;
 }
+            
+/* Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 200px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
 
+/* Modal content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 10%;
+  min-width: 89px;
+  text-align: center;
+}
+
+/* Responsive style */
 @media only screen and (min-width: 0px) and (max-width: 592px) {
 	.grid-calendar-item-event div span {
 		display: none;
 	}
-	.grid-calendar-body {
-		height: 450px;
-		padding-bottom: 235px;
-	}
-	.grid-calendar-item {
+
+	.grid-calendar-item, .grid-calendar-item-event {
 		min-height: 135px;
 	}
+
+	.modal {
+		padding-top: 150px;
+	}
 }
+
+/* Close button Style */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
