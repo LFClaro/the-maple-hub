@@ -1,0 +1,76 @@
+{
+  "years" : [
+      "2020",
+      "2021"
+  ],
+  "yearsMonths" : [
+      [
+        "month9"
+      ],
+      [
+        "month0"
+      ]
+  ],
+  "yearsMonthsDays" : [
+      [
+          [
+              {
+                "day" : "4",
+                "gameField" : "Scotiabank Arena",
+                "time" : "4am",
+                "homeTeam" : {
+                  "name" : "Maple Leafs",
+                  "img" : "../images/maple_leafs.svg"
+                },
+                "visitingTeam" : {
+                  "name" : "Blue Jackets",
+                  "img" : "../images/blue_jackets.svg"
+                }
+              },
+              {
+                "day" : "17",
+                "gameField" : "Scotiabank Arena",
+                "time" : "3pm",
+                "homeTeam" : {
+                  "name" : "Maple Leafs",
+                  "img" : "../images/maple_leafs.svg"
+                },
+                "visitingTeam" : {
+                  "name" : "Senators",
+                  "img" : "../images/senators.svg"
+                }
+              },
+              {
+                "day" : "29",
+                "gameField" : "TD Garden",
+                "time" : "4pm",
+                "homeTeam" : {
+                  "name" : "Bruins",
+                  "img" : "../images/bruins.svg"
+                },
+                "visitingTeam" : {
+                  "name" : "Maple Leafs",
+                  "img" : "../images/maple_leafs.svg"
+                }
+              }
+          ]
+      ],
+      [
+        [
+          {
+            "day" : "4",
+            "gameField" : "Scotiabank Arena",
+            "time" : "10pm",
+            "homeTeam" : {
+              "name" : "Maple Leafs",
+              "img" : "../images/maple_leafs.svg"
+            },
+            "visitingTeam" : {
+              "name" : "Blue Jackets",
+              "img" : "../images/blue_jackets.svg"
+            }
+          }
+        ]
+      ]
+  ]
+}
