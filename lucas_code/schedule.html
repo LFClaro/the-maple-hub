@@ -17,6 +17,8 @@
 
         <header>
             <h1>The Maple Hub</h1>
+            
+            <!-- NAVIGATION MENU -->
             <nav>
                 <a href="../index.html">Home</a>
                 <a href="../lucas_code/schedule.html">Schedule</a>
@@ -68,13 +70,22 @@
 
         <main>
             <h2>Season Schedule</h2>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="modal-content-event"></div>
+                </div>
+            </div>
             
+            <!-- Calendar Header -->
             <table class="calendar-header">
                 <tr>
                     <td colspan="7"><br />
-                        <a href="#">&nbsp;<&nbsp;</a>
-                        <h3>October 2020</h3>
-                        <a href="#">&nbsp;>&nbsp;</a><br /><br />
+                        <a href="#" onclick="updateCurrentMonth(-1)">&nbsp;<&nbsp;</a>
+                        <h3 id="calendar-header-title">October 2020</h3>
+                        <a href="#" onclick="updateCurrentMonth(1)">&nbsp;>&nbsp;</a><br /><br />
                     </td>
                 </tr>
                 <tr>
@@ -88,82 +99,16 @@
                 </tr>
             </table>
             
-            <div id="grid-calendar-background">
-                <div class="grid-calendar-body">
-                    <div class="grid-calendar-item"></div>
-                    <div class="grid-calendar-item"></div>
-                    <div class="grid-calendar-item"></div>
-                    <div class="grid-calendar-item"></div>
-                    <div class="grid-calendar-item">1</div>
-                    <div class="grid-calendar-item">2</div>
-                    <div class="grid-calendar-item">3</div>
-                    <div class="grid-calendar-item-event" onclick="alert('Resource unavailable')">4
-                        <div>
-                            <img src="../images/maple_leafs.svg" alt="Maple Leafs Ico"><br>
-                            <span>Maple Leafs<br></span><br>
-                            VS<br><br>
-                            <img src="../images/blue_jackets.svg" alt="Blue Jackets Ico"><br>
-                            <span>Blue Jackets</span>
-                        </div>
-                    </div>
-                    <div class="grid-calendar-item">5</div>
-                    <div class="grid-calendar-item">6</div>
-                    <div class="grid-calendar-item">7</div>
-                    <div class="grid-calendar-item">8</div>
-                    <div class="grid-calendar-item">9</div>
-                    <div class="grid-calendar-item">10</div>
-                    <div class="grid-calendar-item">11</div>
-                    <div class="grid-calendar-item">12</div>
-                    <div class="grid-calendar-item">13</div>
-                    <div class="grid-calendar-item">14</div>
-                    <div class="grid-calendar-item">15</div>
-                    <div class="grid-calendar-item">16</div>
-                    <div class="grid-calendar-item-event" onclick="alert('Resource unavailable')">17
-                        <div>
-                            <img src="../images/maple_leafs.svg" alt="Maple Leafs Ico"><br>
-                            <span>Maple Leafs<br></span><br>
-                            VS<br><br>
-                            <img src="../images/senators.svg" alt="Senators Ico"><br>
-                            <span>Senators</span>
-                        </div></div>
-                    <div class="grid-calendar-item">18</div>
-                    <div class="grid-calendar-item">19</div>
-                    <div class="grid-calendar-item-event" onclick="alert('Resource unavailable')">20
-                        <div>
-                            <img src="../images/maple_leafs.svg" alt="Maple Leafs Ico"><br>
-                            <span>Maple Leafs<br></span><br>
-                            VS<br><br>
-                            <img src="../images/blues.svg" alt="Blues Ico"><br>
-                            <span>Blues</span>
-                        </div>
-                    </div>
-                    <div class="grid-calendar-item">21</div>
-                    <div class="grid-calendar-item">22</div>
-                    <div class="grid-calendar-item">23</div>
-                    <div class="grid-calendar-item">24</div>
-                    <div class="grid-calendar-item">25</div>
-                    <div class="grid-calendar-item">26</div>
-                    <div class="grid-calendar-item">27</div>
-                    <div class="grid-calendar-item">28</div>
-                    <div class="grid-calendar-item-event" onclick="alert('Resource unavailable')">29
-                        <div>
-                            <img src="../images/bruins.svg" alt="Bruins Ico"><br>
-                            <span>Bruins<br></span><br>
-                            VS<br><br>
-                            <img src="../images/maple_leafs.svg" alt="Maple Leafs Ico"><br>
-                            <span>Maple Leafs</span>
-                        </div>
-                    </div>
-                    <div class="grid-calendar-item">30</div>
-                    <div class="grid-calendar-item">31</div>
-                </div>
-            </div>
+            <!-- Calendar Body (dynamically generated)-->
+            <div id="grid-calendar-background"></div>
         </main>
 
         <footer>
             Copyright &copy; 2020 The Maple Hub<br />
             <a href="mailto:n01427050@humbermail.ca" target="_blank">lucas@sousa.com</a>
         </footer>
+
+        <script type="text/javascript" src="../scripts/schedule.js"></script>
     </body>
 
 </html>
