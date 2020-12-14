@@ -19,6 +19,8 @@
     
     <header>
         <h1>The Maple Hub</h1>
+        
+        <!-- NAVIGATION MENU -->
         <nav>
             <a href="../index.html">Home</a>
             <a href="../lucas_code/schedule.html">Schedule</a>
@@ -78,11 +80,12 @@
                     <input type="email" id="email" name="email" /><br /><br />         
                     <label for="password">Password</label>:&nbsp;&nbsp;<br />
                     <input type="password" id="password" name="password" /><br /><br />  
-                    <input type="checkbox" id="rememberEmail" name="Remember Email" value="rememberEmail" checked /> Remember Email  
-                    <a href="#">Forgot Password?</a><br />
+                    <input type="checkbox" id="rmbrEmail" name="Remember Email" /> Remember Email  
+                    <a href="#" onclick="forgotPassword()">Forgot Password?</a><br /><br />
+                    <div id="status"></div>
                 </fieldset><br />
 
-                <input type="button" value="Sign In" />
+                <input type="button" value="Sign In" onclick="login()" />
             </form>
         </div>
     </main>
@@ -91,6 +94,8 @@
         Copyright &copy; 2020 The Maple Hub<br />
         <a href="mailto:n01427050@humbermail.ca" target="_blank">lucas@sousa.com</a>
     </footer>
+
+    <script type="text/javascript" src="../scripts/login.js"></script>
 </body>
 
 </html>
