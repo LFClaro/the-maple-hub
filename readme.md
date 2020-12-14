@@ -63,11 +63,7 @@ To create a fan page for the Toronto Maple Leafs where users can view Player Sta
 * **_Season Game Schedule_**
   * This page will show a calendar with information on all scheduled Maple Leafs games in the current season. The calendar will be displayed on a monthly basis, and the days with games scheduled will be clickable item, which will open a popup with all information related to the game.
 * **_Login_**
-  * This page will have a field to request the username and password. There will also be a link "Forgot Password?", which will make it possible to reset the user password through the answers to the key questions provided during the "Become a Member" process.
-* **_Account Management_**
-  * In this page, the user will be able to delete their account, change their information and site preferences.
-* **_Bets for 'Fans'_**
-  * This page will allow users to see betting options for Maple leaf games, and their amount of coins. Bets will be placed using Maple Leaf Coins. Each user starts each season with a certain amount of Maple Leaf Coins, and these coins can be used on the betting page to award (or lose) Maple Leaf Coins. At the end of the season, the first three users with more Maple Leaf Coins will be awarded with some items for fan such as autographed t-shirts and other. 
+  * This page will have a field to request the username and password. There will also be a link "Forgot Password?", which will make it possible to reset the user password through the answers to the key questions provided during the "Become a Member" process. 
 
 ### Timeline
 Task and schedule: (from Week 4 to Week 14)
