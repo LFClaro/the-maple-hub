@@ -31,6 +31,7 @@ th {
     color: white;
 }
 
+/* Responsive style */
 @media only screen and (min-width: 0) and (max-width: 1226px) {
     table, thead, tbody, tr, td, th {
         display: block;
@@ -105,4 +106,32 @@ th {
     #t2 td:nth-of-type(14):before {font-weight: bold; content: "HDGF";}
     #t2 td:nth-of-type(15):before {font-weight: bold; content: "HDC%";}
     #t2 td:nth-of-type(16):before {font-weight: bold; content: "HDGA";}
+}
+
+/* Tooltip styles */
+.tooltipOwner {
+    position: relative;
+}
+  
+.tooltiptext {
+    visibility: hidden;
+    width: max-content;
+    max-width: 300px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltipOwner:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
 }
