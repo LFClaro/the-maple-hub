@@ -8,7 +8,7 @@ function highlight_row() {
     // and references the tagname td for the tables cells
 
     for (var i = 0; i < cells.length; i++) {
-        var cell = cells[i];
+        var cell = cells[i]; // array
         // using a for loop take each cell and loop through the table
         // in other words selecting each cell in the table
         // now we need to define cells selected vs not selected 
@@ -24,9 +24,13 @@ function highlight_row() {
             // The rowIndex property returns the position of a row in the rows collection of a table. 
             // utimately getting the row id where the cell exists /  is clicked
 
+
+
             var rowsNotSelected = table.getElementsByTagName('tr');
             // defining rows that are not selected 
             // using table var from before and the id tr which are the rows in the table
+
+
 
             for (var row = 0; row < rowsNotSelected.length; row++) {
                 rowsNotSelected[row].style.backgroundColor = "";
@@ -36,6 +40,8 @@ function highlight_row() {
                 // This property is useful to add, remove and toggle CSS classes on an element.
                 // The classList property is read-only, however, you can modify it by using the add() and remove() methods.
                 // leaving the background colour unchanged
+                // we first set the variable row and use a for loop to loop through rowsnotselected
+                // and do the following changes to the rows 
                 
 
             }
@@ -53,6 +59,10 @@ function highlight_row() {
             // usses queryselctor to ignore image and look at span class
             // as well as this to get value from cell clicked on  
             // \n print the second part of the message on line below
+            // one struggle was getting the player name cell to ignore the image in cell
+            // prev was like - rowSelected.cells[0].innerHTML;
+            // added querySelector() which returns the first Element within the document that matches the specified selector, 
+            // in this case the .player_name class which hold the players name in a span element 
         }
     }
 
@@ -60,37 +70,3 @@ function highlight_row() {
 
 window.onload = highlight_row;
 // loads the function when page loads
-
-/*
-function highlight_row2() {
-    var table = document.getElementById('t1');
-    var cells = table.getElementsByTagName('td');
-    var th = table.getElementsByTagName('th');
-
-    for (var i = 0; i < cells.length; i++) {
-        // Take each cell and lopp
-        var cell = cells[i];
-        // do something on onclick event for cell
-        cell.onclick = function () {
-            // Get the row id where the cell exists / clicked
-            var rowId = this.parentNode.rowIndex;
-
-            var rowsNotSelected = table.getElementsByTagName('tr');
-            for (var row = 0; row < rowsNotSelected.length; row++) {
-                rowsNotSelected[row].style.backgroundColor = "";
-                rowsNotSelected[row].classList.remove('selected');
-            }
-            var rowSelected = table.getElementsByTagName('tr')[rowId];
-            rowSelected.style.backgroundColor = "gold";
-            rowSelected.className += " selected";
-
-            msg = 'The player name is: ' + rowSelected.cells[0].querySelector('.player_name').innerHTML;
-            msg += '\nThe ' + th.innerHTML + ' value is: ' + this.innerHTML;
-            alert(msg);            
-        }
-    }
-
-} //end of function
-
-window.onload = highlight_row2;
-*/
