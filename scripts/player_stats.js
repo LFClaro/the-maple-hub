@@ -1,27 +1,28 @@
 function highlight_row() {
     var table = document.getElementById('t1');
     // above set the variable table and references the id t1 
-    // which is the id for the entire table
+    // which is the id for the whole table
 
     var cells = table.getElementsByTagName('td');
-    // set the var for cells, but says inside this table
-    // and references the tagname td for the table cells 
+    // set the var for cells, and is inside the table - set above
+    // and references the tagname td for the tables cells
 
     for (var i = 0; i < cells.length; i++) {
         var cell = cells[i];
-        // using a for loop take each cell and loop
+        // using a for loop take each cell and loop through the table
         // in other words selecting each cell in the table
         // now we need to define cells selected vs not selected 
         
         
         cell.onclick = function () {
-            // Do something on onclick event for cell - starting function in func
+            // Do something on onclick event for cell - starting function inside a func
             
             var rowId = this.parentNode.rowIndex;
-            // set the var rowID using this to refer to this object (node object)
-            // The parentNode property returns the parent node of the specified node, as a Node object.
-            // The rowIndex property returns the position of a row in the rows collection of a table.
-            // Get the row id where the cell exists / clicked
+            // set the var rowID using this to refer to this. global object 
+            // a node in js is simply a html element - everything from the start tag to the end tag:
+            // The parentNode property returns the parent node of the specified node, as a Node object. - like when we click on the cell
+            // The rowIndex property returns the position of a row in the rows collection of a table. 
+            // utimately getting the row id where the cell exists /  is clicked
 
             var rowsNotSelected = table.getElementsByTagName('tr');
             // defining rows that are not selected 
@@ -30,7 +31,10 @@ function highlight_row() {
             for (var row = 0; row < rowsNotSelected.length; row++) {
                 rowsNotSelected[row].style.backgroundColor = "";
                 rowsNotSelected[row].classList.remove('selected');
-                // using a for loop to loop through all rows not selected
+                // using a for loop to loop through every row not selected
+                // The classList property returns the class name(s) of an element, as a DOMTokenList object.
+                // This property is useful to add, remove and toggle CSS classes on an element.
+                // The classList property is read-only, however, you can modify it by using the add() and remove() methods.
                 // leaving the background colour unchanged
                 
 
@@ -40,6 +44,7 @@ function highlight_row() {
             rowSelected.className += " selected";
             // setting variable for rows selected vs not
             // changing colours for selected rows 
+            // The className property sets or returns the class name of an element (the value of an element's class attribute).
 
             msg = 'The player name is: ' + rowSelected.cells[0].querySelector('.player_name').innerHTML;
             msg += '\nThe cell value is: ' + this.innerHTML;
@@ -47,12 +52,14 @@ function highlight_row() {
             // prints message about the cell you clicked 
             // usses queryselctor to ignore image and look at span class
             // as well as this to get value from cell clicked on  
+            // \n print the second part of the message on line below
         }
     }
 
 } //end of function
 
 window.onload = highlight_row;
+// loads the function when page loads
 
 /*
 function highlight_row2() {
